@@ -1,0 +1,12 @@
+CREATE DATABASE Sports
+
+
+if OBJECT_ID('Utilizatori','U') is not null
+	drop table Utilizatori
+go
+CREATE TABLE Utilizatori
+(
+	IDUtilizator int IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	username varchar(16) NOT NULL,
+	parola varchar(16) NOT NULL
+)
