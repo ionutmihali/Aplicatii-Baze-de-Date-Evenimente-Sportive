@@ -8,5 +8,8 @@ CREATE TABLE Utilizatori
 (
 	IDUtilizator int IDENTITY(1,1) NOT NULL PRIMARY KEY,
 	username varchar(16) NOT NULL,
-	parola varchar(16) NOT NULL
+	parola varchar(16) NOT NULL,
+	tip varchar(16) NOT NULL
 )
+
+select * from Utilizatori
