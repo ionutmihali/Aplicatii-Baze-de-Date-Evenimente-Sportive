@@ -1,5 +1,7 @@
 CREATE DATABASE Sports
 
+DROP DATABASE Sports
+
 
 if OBJECT_ID('Utilizatori','U') is not null
 	drop table Utilizatori
@@ -12,4 +14,46 @@ CREATE TABLE Utilizatori
 	tip varchar(16) NOT NULL
 )
 
-select * from Utilizatori
+if OBJECT_ID('Sporturi','U') is not null
+	drop table Sporturi
+go
+CREATE TABLE Sporturi
+(
+	IDSport int IDENTITY(100,1) NOT NULL PRIMARY KEY,
+	denumire varchar(16) NOT NULL,
+	tip varchar(16) NOT NULL
+)
+
+
+
+if OBJECT_ID('Studenti','U') is not null
+	drop table Studenti
+go
+CREATE TABLE Studenti
+(
+	IDStudent int IDENTITY(1000,1) NOT NULL PRIMARY KEY,
+	nume varchar(16) NOT NULL,
+	prenume varchar(16) NOT NULL,
+)
+
+if OBJECT_ID('SporturiStudent','U') is not null
+	drop table SporturiStudent
+go
+CREATE TABLE SporturiStudent
+(
+	IdSporturiStudent int IDENTITY(2000,1) NOT NULL PRIMARY KEY,
+	IDSport int FOREIGN KEY REFERENCES Sporturi(IDSport),
+	IDStudent int FOREIGN KEY REFERENCES Studenti(IDStudent)
+)
+
+select*
+from Studenti
+
+select*
+from Sporturi
+
+select*
+from Utilizatori
+
+select*
+from SporturiStudent
