@@ -1,6 +1,8 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity.Core.Metadata.Edm;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -19,18 +21,22 @@ namespace TemaABD
     /// </summary>
     public partial class CreareCont : Window
     {
+        private string tip;
         public CreareCont()
         {
             InitializeComponent();
+            this.TipUtilizator.Items.Add("Administrator");
+            this.TipUtilizator.Items.Add("Antrenor");
         }
 
-        static void InsertExample(string u, string p)
+        static void InsertExample(string u, string p,string t)
         {
             var context = new SportsEntities();
             var newUser = new Utilizatori()
             {
                 username = u,
                 parola = p,
+                tip = t,
 
             };
             context.Utilizatoris.Add(newUser);
@@ -38,7 +44,7 @@ namespace TemaABD
         }
         private void Butoncontnou_Click(object sender, RoutedEventArgs e)
         {
-            InsertExample(user.Text, pass.Password);
+            InsertExample(user.Text, pass.Password, this.tip);
             MessageBox.Show("User inserted!");
         }
 
@@ -47,6 +53,18 @@ namespace TemaABD
             MainWindow m = new MainWindow();
             this.Close();
             m.Show();
+        }
+
+        private void TipUtilizator_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+            if (TipUtilizator.SelectedValue == "Administrator")
+                this.tip = "Administrator";
+            else if (TipUtilizator.SelectedValue == "Antrenor")
+                this.tip = "Antrenor";
+            else {
+                MessageBox.Show("Selecteaza tipul de utilizator.");
+            }
         }
     }
 }
