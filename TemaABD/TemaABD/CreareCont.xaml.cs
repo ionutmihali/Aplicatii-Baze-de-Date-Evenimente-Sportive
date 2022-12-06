@@ -45,7 +45,10 @@ namespace TemaABD
         private void Butoncontnou_Click(object sender, RoutedEventArgs e)
         {
             InsertExample(user.Text, pass.Password, this.tip);
-            MessageBox.Show("User inserted!");
+            MessageBox.Show("Cont creat!");
+            MainWindow m = new MainWindow();
+            this.Close();
+            m.Show();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
