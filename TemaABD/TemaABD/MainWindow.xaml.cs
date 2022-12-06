@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -31,7 +31,7 @@ namespace TemaABD
             this.Close();
             c.Show();
         }
-        
+
         private void Butonantrenor_Click(object sender, RoutedEventArgs e)
         {
             using (var context = new SportsEntities())
@@ -39,56 +39,78 @@ namespace TemaABD
                 var results = from c in context.Utilizatoris
                               select new
                               {
-                                 c.username,
-                                 c.parola
+                                  c.username,
+                                  c.parola,
+                                  c.tip,
                               };
 
-                if (user.Text == "admin")
-                {
-                    if (pass.Password == "admin")
-                    {
-                        MessageBox.Show("Eroare la autentificare");
-                        return;
-
-                    }
-                }
-
+                int flag = 0;
                 foreach (var item in results)
-                { 
-                    if (user.Text == item.username)
+                {
+                    if (item.tip == "Antrenor")
                     {
-                        if (pass.Password == item.parola)
+                        if (user.Text == item.username)
                         {
-                            MessageBox.Show("Antrenor logat!");
-                            break;
-                        }
-                        else
-                        {
-                            MessageBox.Show("Eroare la autentificare!");
-                            break;
+                            if (pass.Password == item.parola)
+                            {
+                                MessageBox.Show("Antrenor logat!");
+                                flag = 1;
+                                MeniuAntrenor m = new MeniuAntrenor();
+                                this.Close();
+                                m.Show();
+                                break;
+                            }
+                            else
+                            {
+                                MessageBox.Show("Eroare la autentificare: verifica datele de logare!");
+                                break;
+                            }
                         }
                     }
                 }
+
+                if (flag == 0)
+                    MessageBox.Show("Acces interzis!");
             }
         }
-        
+
         private void Butonadmin_Click(object sender, RoutedEventArgs e)
         {
-            if (user.Text == "admin")
+            using (var context = new SportsEntities())
             {
-                if (pass.Password == "admin")
-                {
-                    MessageBox.Show("Administrator logat!");
+                var results = from c in context.Utilizatoris
+                              select new
+                              {
+                                  c.username,
+                                  c.parola,
+                                  c.tip,
+                              };
 
-                }
-                else
+                int flag = 0;
+                foreach (var item in results)
                 {
-                    MessageBox.Show("Eroare la autentificare: Not an administrator!");
-
+                    if (item.tip == "Administrator")
+                    {
+                        if (user.Text == item.username)
+                        {
+                            if (pass.Password == item.parola)
+                            {
+                                MessageBox.Show("Administrator logat!");
+                                flag = 1;
+                                break;
+                            }
+                            else
+                            {
+                                MessageBox.Show("Eroare la autentificare: verifica datele de logare!");
+                                break;
+                            }
+                        }
+                    }
                 }
+
+                if (flag == 0)
+                    MessageBox.Show("Acces interzis!");
             }
         }
     }
-
-
 }
