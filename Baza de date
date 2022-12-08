@@ -62,6 +62,7 @@ go
 CREATE TABLE EvenimentSportivIndividual
 (
 	IdEvenimentSportivIndividual int IDENTITY(3000,1) NOT NULL PRIMARY KEY,
+	nume varchar(32) NOT NULL,
 	player1 int FOREIGN KEY REFERENCES Studenti(IDStudent),
 	player2 int FOREIGN KEY REFERENCES Studenti(IDStudent),
 	scor1 int,
@@ -94,6 +95,7 @@ go
 CREATE TABLE EvenimentSportivEchipe
 (
 	IdEvenimentSportivEchipe int IDENTITY(6000,1) NOT NULL PRIMARY KEY,
+	nume varchar(32) NOT NULL,
 	echipa1 int FOREIGN KEY REFERENCES Echipe(IdEchipe),
 	echipa2 int FOREIGN KEY REFERENCES Echipe(IdEchipe),
 	scor1 int,
