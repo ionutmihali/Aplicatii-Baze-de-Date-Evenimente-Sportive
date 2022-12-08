@@ -41,6 +41,34 @@ namespace TemaABD
             };
             context.Utilizatoris.Add(newUser);
             context.SaveChanges();
+            
+            var results = from users in context.Utilizatoris
+                          select new
+                          {
+                              users.IDUtilizator,
+                              users.username,
+                              
+                          };
+
+            int id = 0;
+            foreach (var item in results)
+            {
+                if (item.username == u)
+                {
+                    id = item.IDUtilizator;
+                }
+            }
+
+            if (t == "Antrenor")
+            {
+                var newAntrenor = new Antrenori()
+                {
+                    IDUtilizator = id
+                };
+
+                context.Antrenoris.Add(newAntrenor);
+                context.SaveChanges();
+            }
         }
         private void Butoncontnou_Click(object sender, RoutedEventArgs e)
         {
