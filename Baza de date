@@ -14,6 +14,16 @@ CREATE TABLE Utilizatori
 	tip varchar(16) NOT NULL
 )
 
+if OBJECT_ID('Antrenori','U') is not null
+	drop table Antrenori
+go
+CREATE TABLE Antrenori
+(
+	IDAntrenori int IDENTITY(500,1) NOT NULL PRIMARY KEY,
+	IDUtilizator int FOREIGN KEY REFERENCES Utilizatori(IDUtilizator),
+	IDSport int FOREIGN KEY REFERENCES Sporturi(IDSport)
+)
+
 if OBJECT_ID('Sporturi','U') is not null
 	drop table Sporturi
 go
@@ -45,6 +55,51 @@ CREATE TABLE SporturiStudent
 	IDSport int FOREIGN KEY REFERENCES Sporturi(IDSport),
 	IDStudent int FOREIGN KEY REFERENCES Studenti(IDStudent)
 )
+
+if OBJECT_ID('EvenimentSportivIndividual','U') is not null
+	drop table EvenimentSportivIndividual
+go
+CREATE TABLE EvenimentSportivIndividual
+(
+	IdEvenimentSportivIndividual int IDENTITY(3000,1) NOT NULL PRIMARY KEY,
+	player1 int FOREIGN KEY REFERENCES Studenti(IDStudent),
+	player2 int FOREIGN KEY REFERENCES Studenti(IDStudent),
+	scor1 int,
+	scor2 int
+)
+
+if OBJECT_ID('Echipe','U') is not null
+	drop table Echipe
+go
+CREATE TABLE Echipe
+(
+	IdEchipe int IDENTITY(4000,1) NOT NULL PRIMARY KEY,
+	nume varchar(16) NOT NULL
+)
+
+if OBJECT_ID('EchipeStudent','U') is not null
+	drop table EchipeStudent
+go
+CREATE TABLE EchipeStudent
+(
+	IdEchipeStudent int IDENTITY(5000,1) NOT NULL PRIMARY KEY,
+	IDStudent int FOREIGN KEY REFERENCES Studenti(IDStudent),
+	IdEchipe int FOREIGN KEY REFERENCES Echipe(IdEchipe)
+)
+
+
+if OBJECT_ID('EvenimentSportivEchipe','U') is not null
+	drop table EvenimentSportivEchipe
+go
+CREATE TABLE EvenimentSportivEchipe
+(
+	IdEvenimentSportivEchipe int IDENTITY(6000,1) NOT NULL PRIMARY KEY,
+	echipa1 int FOREIGN KEY REFERENCES Echipe(IdEchipe),
+	echipa2 int FOREIGN KEY REFERENCES Echipe(IdEchipe),
+	scor1 int,
+	scor2 int
+)
+
 
 select*
 from Studenti
