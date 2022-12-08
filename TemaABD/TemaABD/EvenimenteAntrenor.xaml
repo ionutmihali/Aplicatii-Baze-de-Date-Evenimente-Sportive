@@ -1,0 +1,39 @@
+﻿<Window x:Class="TemaABD.EvenimenteAntrenor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TemaABD"
+        mc:Ignorable="d"
+        Title="EvenimenteAntrenor" Height="450" Width="800" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Window.Resources>
+        <CollectionViewSource x:Key="studentiViewSource7" d:DesignSource="{d:DesignInstance {x:Type local:Studenti}}"/>
+        <local:SportsDataSet x:Key="sportsDataSet"/>
+        <CollectionViewSource x:Key="evenimentSportivEchipeViewSource" Source="{Binding EvenimentSportivEchipe, Source={StaticResource sportsDataSet}}"/>
+        <CollectionViewSource x:Key="evenimentSportivIndividualViewSource" Source="{Binding EvenimentSportivIndividual, Source={StaticResource sportsDataSet}}"/>
+        <CollectionViewSource x:Key="studentiViewSource" Source="{Binding Studenti, Source={StaticResource sportsDataSet}}"/>
+    </Window.Resources>
+    <Grid DataContext="{StaticResource evenimentSportivEchipeViewSource}">
+        <Button Content="Inapoi" HorizontalAlignment="Left" Margin="714,384,0,0" VerticalAlignment="Top" Height="26" Width="61" Click="Button_Click_1"/>
+        <DataGrid x:Name="evenimentSportivEchipeDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" RowDetailsVisibilityMode="VisibleWhenSelected" Margin="34,27,367,233" SelectionChanged="evenimentSportivEchipeDataGrid_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="idEvenimentSportivEchipeColumn" Binding="{Binding IdEvenimentSportivEchipe}" Header="Id Eveniment Sportiv Echipe" IsReadOnly="True" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="numeColumn" Binding="{Binding nume}" Header="Nume" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="echipa1Column" Binding="{Binding echipa1}" Header="Echipa 1" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="echipa2Column" Binding="{Binding echipa2}" Header="Echipa 2" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="scor1Column" Binding="{Binding scor1}" Header="Scor 1" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="scor2Column" Binding="{Binding scor2}" Header="Scor 2" Width="SizeToHeader"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="evenimentSportivIndividualDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding Source={StaticResource evenimentSportivIndividualViewSource}}" RowDetailsVisibilityMode="VisibleWhenSelected" Margin="285,217,102,37">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="idEvenimentSportivIndividualColumn" Binding="{Binding IdEvenimentSportivIndividual}" Header="Id Eveniment Sportiv Individual" IsReadOnly="True" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="numeColumn1" Binding="{Binding nume}" Header="nume" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="player1Column" Binding="{Binding player1}" Header="player 1" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="player2Column" Binding="{Binding player2}" Header="player 2" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="scor1Column1" Binding="{Binding scor1}" Header="scor 1" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="scor2Column1" Binding="{Binding scor2}" Header="scor 2" Width="SizeToHeader"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
