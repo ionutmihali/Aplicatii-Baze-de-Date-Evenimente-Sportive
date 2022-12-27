@@ -9,8 +9,18 @@ go
 CREATE TABLE Utilizatori
 (
 	IDUtilizator int IDENTITY(1,1) NOT NULL PRIMARY KEY,
-	username varchar(16) NOT NULL,
+	username varchar(16) NOT NULL UNIQUE,
 	parola varchar(16) NOT NULL,
+	tip varchar(16) NOT NULL
+)
+
+if OBJECT_ID('Sporturi','U') is not null
+	drop table Sporturi
+go
+CREATE TABLE Sporturi
+(
+	IDSport int IDENTITY(100,1) NOT NULL PRIMARY KEY,
+	denumire varchar(16) NOT NULL,
 	tip varchar(16) NOT NULL
 )
 
@@ -24,16 +34,6 @@ CREATE TABLE Antrenori
 	IDSport int FOREIGN KEY REFERENCES Sporturi(IDSport)
 )
 
-if OBJECT_ID('Sporturi','U') is not null
-	drop table Sporturi
-go
-CREATE TABLE Sporturi
-(
-	IDSport int IDENTITY(100,1) NOT NULL PRIMARY KEY,
-	denumire varchar(16) NOT NULL,
-	tip varchar(16) NOT NULL
-)
-
 
 
 if OBJECT_ID('Studenti','U') is not null
@@ -43,7 +43,7 @@ CREATE TABLE Studenti
 (
 	IDStudent int IDENTITY(1000,1) NOT NULL PRIMARY KEY,
 	nume varchar(16) NOT NULL,
-	prenume varchar(16) NOT NULL,
+	prenume varchar(16) NOT NULL
 )
 
 if OBJECT_ID('SporturiStudent','U') is not null
@@ -62,11 +62,11 @@ go
 CREATE TABLE EvenimentSportivIndividual
 (
 	IdEvenimentSportivIndividual int IDENTITY(3000,1) NOT NULL PRIMARY KEY,
-	nume varchar(32) NOT NULL,
+	nume varchar(128) NOT NULL,
 	player1 int FOREIGN KEY REFERENCES Studenti(IDStudent),
-	player2 int FOREIGN KEY REFERENCES Studenti(IDStudent),
-	scor1 int,
-	scor2 int
+	--player2 int FOREIGN KEY REFERENCES Studenti(IDStudent),
+	scor1 int
+	--scor2 int
 )
 
 if OBJECT_ID('Echipe','U') is not null
@@ -95,7 +95,7 @@ go
 CREATE TABLE EvenimentSportivEchipe
 (
 	IdEvenimentSportivEchipe int IDENTITY(6000,1) NOT NULL PRIMARY KEY,
-	nume varchar(32) NOT NULL,
+	nume varchar(128) NOT NULL,
 	echipa1 int FOREIGN KEY REFERENCES Echipe(IdEchipe),
 	echipa2 int FOREIGN KEY REFERENCES Echipe(IdEchipe),
 	scor1 int,
@@ -103,14 +103,118 @@ CREATE TABLE EvenimentSportivEchipe
 )
 
 
-select*
-from Studenti
+--select*
+--from Studenti
 
-select*
-from Sporturi
+--select*
+--from Sporturi
 
-select*
-from Utilizatori
+--select*
+--from Utilizatori
 
-select*
-from SporturiStudent
+--select*
+--from SporturiStudent
+
+--select*
+--from Antrenori
+
+--select*
+---from EvenimentSportivEchipe
+
+--select*
+--from EvenimentSportivIndividual
+
+
+-- utilizatori
+
+INSERT INTO Utilizatori (username, parola, tip) VALUES ('admin1', 'password1', 'administrator')
+INSERT INTO Utilizatori (username, parola, tip) VALUES ('admin2', 'password2', 'administrator')
+INSERT INTO Utilizatori (username, parola, tip) VALUES ('admin3', 'password3', 'administrator')
+INSERT INTO Utilizatori (username, parola, tip) VALUES ('trainer1', 'password4', 'antrenor')
+INSERT INTO Utilizatori (username, parola, tip) VALUES ('trainer2', 'password5', 'antrenor')
+INSERT INTO Utilizatori (username, parola, tip) VALUES ('trainer3', 'password6', 'antrenor')
+INSERT INTO Utilizatori (username, parola, tip) VALUES ('admin4', 'password7', 'administrator')
+INSERT INTO Utilizatori (username, parola, tip) VALUES ('admin5', 'password8', 'administrator')
+INSERT INTO Utilizatori (username, parola, tip) VALUES ('trainer4', 'password9', 'antrenor')
+INSERT INTO Utilizatori (username, parola, tip) VALUES ('trainer5', 'password10', 'antrenor')
+
+--sporturi
+
+INSERT INTO Sporturi (denumire, tip) VALUES ('fotbal', 'outdoor')
+INSERT INTO Sporturi (denumire, tip) VALUES ('baschet', 'indoor')
+INSERT INTO Sporturi (denumire, tip) VALUES ('tenis', 'outdoor')
+INSERT INTO Sporturi (denumire, tip) VALUES ('atletism', 'outdoor')
+INSERT INTO Sporturi (denumire, tip) VALUES ('box', 'indoor')
+INSERT INTO Sporturi (denumire, tip) VALUES ('ciclism', 'outdoor')
+INSERT INTO Sporturi (denumire, tip) VALUES ('inot', 'indoor')
+INSERT INTO Sporturi (denumire, tip) VALUES ('alpinism', 'outdoor')
+INSERT INTO Sporturi (denumire, tip) VALUES ('skateboarding', 'outdoor')
+INSERT INTO Sporturi (denumire, tip) VALUES ('yoga', 'indoor')
+
+--Studenti
+
+INSERT INTO Studenti (nume, prenume) VALUES ('Ionescu', 'Ion')
+INSERT INTO Studenti (nume, prenume) VALUES ('Popescu', 'Maria')
+INSERT INTO Studenti (nume, prenume) VALUES ('Vasile', 'Ioan')
+INSERT INTO Studenti (nume, prenume) VALUES ('Marin', 'Ana')
+INSERT INTO Studenti (nume, prenume) VALUES ('Gheorghe', 'Raluca')
+INSERT INTO Studenti (nume, prenume) VALUES ('Mihai', 'Irina')
+INSERT INTO Studenti (nume, prenume) VALUES ('Tudor', 'Alexandru')
+INSERT INTO Studenti (nume, prenume) VALUES ('Georgescu', 'Andreea')
+INSERT INTO Studenti (nume, prenume) VALUES ('Petrescu', 'Razvan')
+INSERT INTO Studenti (nume, prenume) VALUES ('Badea', 'Mihaela')
+
+--EvenimentSportivIndividual
+
+INSERT INTO EvenimentSportivIndividual (nume) VALUES ('Cupa Bucurestiului la tenis')
+INSERT INTO EvenimentSportivIndividual (nume) VALUES ('Campionatul national de box')
+INSERT INTO EvenimentSportivIndividual (nume) VALUES ('Maratonul de alpinism din Muntii Fagaras')
+INSERT INTO EvenimentSportivIndividual (nume) VALUES ('Competitia de inot a Clubului Sportiv Municipal')
+INSERT INTO EvenimentSportivIndividual (nume) VALUES ('Cupa Timisoara la skateboarding')
+INSERT INTO EvenimentSportivIndividual (nume) VALUES ('Marea finala de atletism a Liceului Sportiv')
+INSERT INTO EvenimentSportivIndividual (nume) VALUES ('Campionatul regional de ciclism')
+INSERT INTO EvenimentSportivIndividual (nume) VALUES ('Turneul international de tenis al orasului Cluj-Napoca')
+INSERT INTO EvenimentSportivIndividual (nume) VALUES ('Intrecerile de baschet ale Universitatii Politehnica')
+INSERT INTO EvenimentSportivIndividual (nume) VALUES ('Cupa Braila la fotbal')
+
+--EvenimentSportivEchipe
+
+INSERT INTO EvenimentSportivEchipe (nume) VALUES ('Cupa Romaniei U18 la fotbal')
+INSERT INTO EvenimentSportivEchipe (nume) VALUES ('Campionatul national de baschet U16')
+INSERT INTO EvenimentSportivEchipe (nume) VALUES ('Turneul de inot al scolilor')
+INSERT INTO EvenimentSportivEchipe (nume) VALUES ('Competitia de atletism a Clubului Sportiv Universitar')
+INSERT INTO EvenimentSportivEchipe (nume) VALUES ('Cupa Suceava la tenis de camp')
+
+
+--Echipe
+
+INSERT INTO Echipe (nume) VALUES ('FC Amateurs')
+INSERT INTO Echipe (nume) VALUES ('Real Amateurs')
+INSERT INTO Echipe (nume) VALUES ('Rogue')
+INSERT INTO Echipe (nume) VALUES ('City')
+INSERT INTO Echipe (nume) VALUES ('Stars')
+INSERT INTO Echipe (nume) VALUES ('Giants')
+INSERT INTO Echipe (nume) VALUES ('Lions')
+INSERT INTO Echipe (nume) VALUES ('Warriors')
+INSERT INTO Echipe (nume) VALUES ('Eagles')
+INSERT INTO Echipe (nume) VALUES ('Bulls')
+
+--Antrenori
+
+INSERT INTO Antrenori (IDUtilizator, IDSport) VALUES (4, 100)
+INSERT INTO Antrenori (IDUtilizator, IDSport) VALUES (5, 101)
+INSERT INTO Antrenori (IDUtilizator, IDSport) VALUES (6, 102)
+INSERT INTO Antrenori (IDUtilizator, IDSport) VALUES (9, 103)
+INSERT INTO Antrenori (IDUtilizator, IDSport) VALUES (10, 104)
+
+--SporturiStudent
+
+INSERT INTO SporturiStudent (IDSport, IDStudent) VALUES (102, 1001)
+INSERT INTO SporturiStudent (IDSport, IDStudent) VALUES (102, 1002)
+INSERT INTO SporturiStudent (IDSport, IDStudent) VALUES (103, 1003)
+INSERT INTO SporturiStudent (IDSport, IDStudent) VALUES (104, 1004)
+INSERT INTO SporturiStudent (IDSport, IDStudent) VALUES (105, 1005)
+INSERT INTO SporturiStudent (IDSport, IDStudent) VALUES (106, 1006)
+INSERT INTO SporturiStudent (IDSport, IDStudent) VALUES (107, 1007)
+INSERT INTO SporturiStudent (IDSport, IDStudent) VALUES (108, 1008)
+INSERT INTO SporturiStudent (IDSport, IDStudent) VALUES (109, 1009)
