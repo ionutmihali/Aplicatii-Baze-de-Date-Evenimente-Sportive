@@ -127,16 +127,16 @@ CREATE TABLE EvenimentSportivEchipe
 
 -- utilizatori
 
-INSERT INTO Utilizatori (username, parola, tip) VALUES ('admin1', 'password1', 'administrator')
-INSERT INTO Utilizatori (username, parola, tip) VALUES ('admin2', 'password2', 'administrator')
-INSERT INTO Utilizatori (username, parola, tip) VALUES ('admin3', 'password3', 'administrator')
-INSERT INTO Utilizatori (username, parola, tip) VALUES ('trainer1', 'password4', 'antrenor')
-INSERT INTO Utilizatori (username, parola, tip) VALUES ('trainer2', 'password5', 'antrenor')
-INSERT INTO Utilizatori (username, parola, tip) VALUES ('trainer3', 'password6', 'antrenor')
-INSERT INTO Utilizatori (username, parola, tip) VALUES ('admin4', 'password7', 'administrator')
-INSERT INTO Utilizatori (username, parola, tip) VALUES ('admin5', 'password8', 'administrator')
-INSERT INTO Utilizatori (username, parola, tip) VALUES ('trainer4', 'password9', 'antrenor')
-INSERT INTO Utilizatori (username, parola, tip) VALUES ('trainer5', 'password10', 'antrenor')
+INSERT INTO Utilizatori (username, parola, tip) VALUES ('admin1', 'password1', 'Administrator')
+INSERT INTO Utilizatori (username, parola, tip) VALUES ('admin2', 'password2', 'Administrator')
+INSERT INTO Utilizatori (username, parola, tip) VALUES ('admin3', 'password3', 'Administrator')
+INSERT INTO Utilizatori (username, parola, tip) VALUES ('trainer1', 'password4', 'Antrenor')
+INSERT INTO Utilizatori (username, parola, tip) VALUES ('trainer2', 'password5', 'Antrenor')
+INSERT INTO Utilizatori (username, parola, tip) VALUES ('trainer3', 'password6', 'Antrenor')
+INSERT INTO Utilizatori (username, parola, tip) VALUES ('admin4', 'password7', 'Administrator')
+INSERT INTO Utilizatori (username, parola, tip) VALUES ('admin5', 'password8', 'Administrator')
+INSERT INTO Utilizatori (username, parola, tip) VALUES ('trainer4', 'password9', 'Antrenor')
+INSERT INTO Utilizatori (username, parola, tip) VALUES ('trainer5', 'password10', 'Antrenor')
 
 --sporturi
 
