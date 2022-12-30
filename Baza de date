@@ -222,3 +222,18 @@ INSERT INTO SporturiStudent (IDSport, IDStudent, scor) VALUES (106, 1006, '0')
 INSERT INTO SporturiStudent (IDSport, IDStudent, scor) VALUES (107, 1007, '0')
 INSERT INTO SporturiStudent (IDSport, IDStudent, scor) VALUES (108, 1008, '0')
 INSERT INTO SporturiStudent (IDSport, IDStudent, scor) VALUES (109, 1009, '0')
+
+
+--EchipeStudenti
+
+INSERT INTO EchipeStudent (IDStudent, IdEchipe) VALUES (1000, 4000)
+INSERT INTO EchipeStudent (IDStudent, IdEchipe) VALUES (1001, 4001)
+INSERT INTO EchipeStudent (IDStudent, IdEchipe) VALUES (1002, 4002)
+INSERT INTO EchipeStudent (IDStudent, IdEchipe) VALUES (1003, 4003)
+INSERT INTO EchipeStudent (IDStudent, IdEchipe) VALUES (1004, 4004)
+INSERT INTO EchipeStudent (IDStudent, IdEchipe) VALUES (1005, 4000)
+INSERT INTO EchipeStudent (IDStudent, IdEchipe) VALUES (1006, 4000)
+INSERT INTO EchipeStudent (IDStudent, IdEchipe) VALUES (1007, 4005)
+INSERT INTO EchipeStudent (IDStudent, IdEchipe) VALUES (1008, 4006)
+INSERT INTO EchipeStudent (IDStudent, IdEchipe) VALUES (1009, 4008)
+INSERT INTO EchipeStudent (IDStudent, IdEchipe) VALUES (1011, 4009)
