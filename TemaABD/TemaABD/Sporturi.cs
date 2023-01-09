@@ -17,9 +17,8 @@ namespace TemaABD
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Sporturi()
         {
-            this.SporturiStudents = new HashSet<SporturiStudent>();
             this.Antrenoris = new HashSet<Antrenori>();
-            this.Echipes = new HashSet<Echipe>();
+            this.SporturiStudents = new HashSet<SporturiStudent>();
         }
     
         public int IDSport { get; set; }
@@ -27,10 +26,8 @@ namespace TemaABD
         public string tip { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<SporturiStudent> SporturiStudents { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Antrenori> Antrenoris { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Echipe> Echipes { get; set; }
+        public virtual ICollection<SporturiStudent> SporturiStudents { get; set; }
     }
 }

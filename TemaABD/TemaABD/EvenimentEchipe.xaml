@@ -1,0 +1,26 @@
+﻿<Window x:Class="TemaABD.EvenimentEchipe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TemaABD"
+        mc:Ignorable="d"
+        Title="EvenimentEchipe" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <TextBlock Name="ec1" HorizontalAlignment="Left" Margin="92,151,0,0" TextWrapping="Wrap" Text="Text Block" VerticalAlignment="Top"/>
+        <TextBlock Name="ec2" HorizontalAlignment="Left" Margin="576,151,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock Name="ev" Margin="0,51,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <TextBlock Name="scor1" HorizontalAlignment="Left" Margin="259,151,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock Name="scor2" HorizontalAlignment="Left" Margin="488,151,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <DataGrid Name="gridEchipa1" Margin="39,206,603,44">
+        </DataGrid>
+        <DataGrid Name="gridEchipa2" Margin="576,206,54,44">
+        </DataGrid>
+        <Button Name="inapoi" Content="Inapoi" HorizontalAlignment="Center" Margin="0,350,0,0" VerticalAlignment="Top" Height="28" Width="108" Click="inapoi_Click"/>
+        <Button Name="meci" Content="Marcheaza castigator" HorizontalAlignment="Center" Margin="0,298,0,0" VerticalAlignment="Top" Height="28" Width="154" Click="meci_Click"/>
+        <Button Name="runda" Content="Runda castigata" HorizontalAlignment="Center" Margin="0,242,0,0" VerticalAlignment="Top" Height="28" Width="104" Click="runda_Click"/>
+        <TextBlock Name="stare" HorizontalAlignment="Center" Margin="0,151,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock Name="sport" HorizontalAlignment="Center" Margin="0,90,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

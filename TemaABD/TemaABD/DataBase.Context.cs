@@ -13,10 +13,10 @@ namespace TemaABD
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class SportsEntities5 : DbContext
+    public partial class SportsEntities : DbContext
     {
-        public SportsEntities5()
-            : base("name=SportsEntities5")
+        public SportsEntities()
+            : base("name=SportsEntities")
         {
         }
     
@@ -25,14 +25,14 @@ namespace TemaABD
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Utilizatori> Utilizatoris { get; set; }
-        public virtual DbSet<Sporturi> Sporturis { get; set; }
-        public virtual DbSet<SporturiStudent> SporturiStudents { get; set; }
-        public virtual DbSet<Studenti> Studentis { get; set; }
         public virtual DbSet<Antrenori> Antrenoris { get; set; }
         public virtual DbSet<Echipe> Echipes { get; set; }
         public virtual DbSet<EchipeStudent> EchipeStudents { get; set; }
         public virtual DbSet<EvenimentSportivEchipe> EvenimentSportivEchipes { get; set; }
         public virtual DbSet<EvenimentSportivIndividual> EvenimentSportivIndividuals { get; set; }
+        public virtual DbSet<Sporturi> Sporturis { get; set; }
+        public virtual DbSet<SporturiStudent> SporturiStudents { get; set; }
+        public virtual DbSet<Studenti> Studentis { get; set; }
+        public virtual DbSet<Utilizatori> Utilizatoris { get; set; }
     }
 }
