@@ -15,11 +15,11 @@ namespace TemaABD
     public partial class EvenimentSportivEchipe
     {
         public int IdEvenimentSportivEchipe { get; set; }
-        public string nume { get; set; }
         public Nullable<int> echipa1 { get; set; }
         public Nullable<int> echipa2 { get; set; }
         public Nullable<int> scor1 { get; set; }
         public Nullable<int> scor2 { get; set; }
+        public string nume { get; set; }
         public string stare { get; set; }
     
         public virtual Echipe Echipe { get; set; }

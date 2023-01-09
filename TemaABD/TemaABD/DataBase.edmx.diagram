@@ -4,26 +4,27 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="34740d2614d44a298f995ddaf4a93a70" Name="Diagram1">
-        <EntityTypeShape EntityType="SportsModel.Antrenori" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="SportsModel.Echipe" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="SportsModel.EchipeStudent" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="SportsModel.EvenimentSportivEchipe" Width="1.5" PointX="3" PointY="11.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="SportsModel.EvenimentSportivIndividual" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="SportsModel.Sporturi" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="SportsModel.SporturiStudent" Width="1.5" PointX="6" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="SportsModel.Studenti" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="SportsModel.Utilizatori" Width="1.5" PointX="3.75" PointY="15.5" IsExpanded="true" />
-        <AssociationConnector Association="SportsModel.FK__Antrenori__IDSpo__3C69FB99" ManuallyRouted="false" />
-        <AssociationConnector Association="SportsModel.FK__Antrenori__IDUti__3B75D760" ManuallyRouted="false" />
-        <AssociationConnector Association="SportsModel.FK__EchipeStu__IdEch__4BAC3F29" ManuallyRouted="false" />
-        <AssociationConnector Association="SportsModel.FK__Eveniment__echip__4E88ABD4" ManuallyRouted="false" />
-        <AssociationConnector Association="SportsModel.FK__Eveniment__echip__4F7CD00D" ManuallyRouted="false" />
-        <AssociationConnector Association="SportsModel.FK__EchipeStu__IDStu__4AB81AF0" ManuallyRouted="false" />
-        <AssociationConnector Association="SportsModel.FK__Eveniment__playe__44FF419A" ManuallyRouted="false" />
-        <AssociationConnector Association="SportsModel.FK__Eveniment__playe__45F365D3" ManuallyRouted="false" />
-        <AssociationConnector Association="SportsModel.FK__SporturiS__IDSpo__412EB0B6" ManuallyRouted="false" />
-        <AssociationConnector Association="SportsModel.FK__SporturiS__IDStu__4222D4EF" ManuallyRouted="false" />
+      <Diagram DiagramId="3155642690c74139b6760f5f7ae15ec9" Name="Diagram1">
+        <EntityTypeShape EntityType="SportsModel.Utilizatori" Width="1.5" PointX="0.75" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SportsModel.Sporturi" Width="1.5" PointX="10.25" PointY="0.5" />
+        <EntityTypeShape EntityType="SportsModel.SporturiStudent" Width="1.5" PointX="8.625" PointY="3" />
+        <AssociationConnector Association="SportsModel.FK__SporturiS__IDSpo__2A4B4B5E" />
+        <EntityTypeShape EntityType="SportsModel.Studenti" Width="1.5" PointX="0.75" PointY="3.875" />
+        <AssociationConnector Association="SportsModel.FK__SporturiS__IDStu__2B3F6F97" />
+        <EntityTypeShape EntityType="SportsModel.Antrenori" Width="1.5" PointX="5.625" PointY="0.75" />
+        <EntityTypeShape EntityType="SportsModel.Echipe" Width="1.5" PointX="3.375" PointY="7.75" />
+        <EntityTypeShape EntityType="SportsModel.EchipeStudent" Width="1.5" PointX="5.625" PointY="5.875" />
+        <EntityTypeShape EntityType="SportsModel.EvenimentSportivEchipe" Width="1.5" PointX="5.625" PointY="10.25" />
+        <EntityTypeShape EntityType="SportsModel.EvenimentSportivIndividual" Width="1.5" PointX="3" PointY="4" />
+        <AssociationConnector Association="SportsModel.FK__Antrenori__IDSpo__4222D4EF" />
+        <AssociationConnector Association="SportsModel.FK__Antrenori__IDUti__412EB0B6" />
+        <AssociationConnector Association="SportsModel.FK__EchipeStu__IdEch__4BAC3F29" />
+        <AssociationConnector Association="SportsModel.FK__Eveniment__echip__4E88ABD4" />
+        <AssociationConnector Association="SportsModel.FK__Eveniment__echip__4F7CD00D" />
+        <AssociationConnector Association="SportsModel.FK__EchipeStu__IDStu__4AB81AF0" />
+        <AssociationConnector Association="SportsModel.FK__Eveniment__playe__44FF419A" />
+        <AssociationConnector Association="SportsModel.FK__Eveniment__playe__45F365D3" />
+        <AssociationConnector Association="SportsModel.FK__Echipe__IDSport__36B12243" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{434ADC84-F5A7-42C7-A030-12490AB095A2}</ProjectGuid>
+    <ProjectGuid>{D4B62F68-FC7B-4DB8-9FA5-16448C9473DD}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>TemaABD</RootNamespace>
     <AssemblyName>TemaABD</AssemblyName>
@@ -67,11 +67,11 @@
     <Compile Include="AdaugareEveniment.xaml.cs">
       <DependentUpon>AdaugareEveniment.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AdaugareSport.xaml.cs">
-      <DependentUpon>AdaugareSport.xaml</DependentUpon>
-    </Compile>
     <Compile Include="AdaugareStudent.xaml.cs">
       <DependentUpon>AdaugareStudent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdugareSport.xaml.cs">
+      <DependentUpon>AdugareSport.xaml</DependentUpon>
     </Compile>
     <Compile Include="Antrenori.cs">
       <DependentUpon>DataBase.tt</DependentUpon>
@@ -109,12 +109,6 @@
     <Compile Include="EvenimenteAntrenor.xaml.cs">
       <DependentUpon>EvenimenteAntrenor.xaml</DependentUpon>
     </Compile>
-    <Compile Include="EvenimentEchipe.xaml.cs">
-      <DependentUpon>EvenimentEchipe.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="EvenimentIndividual.xaml.cs">
-      <DependentUpon>EvenimentIndividual.xaml</DependentUpon>
-    </Compile>
     <Compile Include="EvenimentSportivEchipe.cs">
       <DependentUpon>DataBase.tt</DependentUpon>
     </Compile>
@@ -127,8 +121,10 @@
     <Compile Include="MeniuAntrenor.xaml.cs">
       <DependentUpon>MeniuAntrenor.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RundaCastigata.xaml.cs">
-      <DependentUpon>RundaCastigata.xaml</DependentUpon>
+    <Compile Include="SportsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SportsDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Sporturi.cs">
       <DependentUpon>DataBase.tt</DependentUpon>
@@ -149,11 +145,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AdaugareSport.xaml">
+    <Page Include="AdaugareStudent.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AdaugareStudent.xaml">
+    <Page Include="AdugareSport.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -173,14 +169,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="EvenimentEchipe.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="EvenimentIndividual.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -189,6 +177,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="CAdmin.cs" />
+    <Compile Include="CAntrenor.cs" />
+    <Compile Include="CUtlizator.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -198,10 +189,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MeniuAntrenor.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="RundaCastigata.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -236,12 +223,21 @@
       <DependentUpon>DataBase.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
-    <None Include="Properties\DataSources\TemaABD.Properties.Resources.datasource" />
     <None Include="Properties\DataSources\TemaABD.Properties.Settings.datasource" />
-    <None Include="Properties\DataSources\TemaABD.Properties.Settings1.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SportsDataSet.xsc">
+      <DependentUpon>SportsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SportsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SportsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SportsDataSet.xss">
+      <DependentUpon>SportsDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -252,9 +248,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="635-6358836_dia-del-profesor-de-educacion-fisica-hd-png.png" />
-    <Resource Include="Sports-620x330.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="DataBase.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>DataBase.edmx</DependentUpon>
@@ -265,6 +258,7 @@
       <DependentUpon>DataBase.edmx</DependentUpon>
       <LastGenOutput>DataBase.cs</LastGenOutput>
     </Content>
+    <Resource Include="Sports-620x330.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

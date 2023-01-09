@@ -5,15 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TemaABD"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
-    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="520" Height="330">
-        <TextBox x:Name="user" HorizontalAlignment="Left" Margin="260,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <PasswordBox x:Name="pass" HorizontalAlignment="Left" Margin="260,209,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="Butonantrenor" Content="Antrenor" HorizontalAlignment="Left" Margin="378,291,0,0" VerticalAlignment="Top" Height="39" Width="94" Click="Butonantrenor_Click"/>
-        <Button x:Name="Butonadmin" Content="Admin" HorizontalAlignment="Left" Margin="51,291,0,0" VerticalAlignment="Top" Height="39" Width="94" Click="Butonadmin_Click"/>
-        <TextBlock HorizontalAlignment="Left" Margin="140,209,0,0" TextWrapping="Wrap" Text="Parola:" VerticalAlignment="Top" RenderTransformOrigin="-0.551,0.72"/>
-        <TextBlock HorizontalAlignment="Left" Margin="140,149,0,0" TextWrapping="Wrap" Text="Username:" VerticalAlignment="Top" Height="16" Width="71"/>
-        <Button x:Name="Butoncontnou" Content="Cont nou" HorizontalAlignment="Center" Margin="0,291,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.193,-0.658" Height="39" Width="94" Click="Butoncontnou_Click"/>
+        Title="MainWindow" Height="450" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <SolidColorBrush Color="Moccasin"/>
+    </Window.Background>
+    <Grid>
+        <TextBox x:Name="user" HorizontalAlignment="Left" Margin="118,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <PasswordBox x:Name="pass" HorizontalAlignment="Left" Margin="118,66,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="29,23,0,0" TextWrapping="Wrap" Text="Username:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="29,66,0,0" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top"/>
+        <Button x:Name="ButonAdmin" Content="Admin" HorizontalAlignment="Left" Margin="77,217,0,0" VerticalAlignment="Top" Height="50" Width="149" Click="ButonAdmin_Click" RenderTransformOrigin="-0.173,-1.209"/>
+        <Button x:Name="ButonAntrenor" Content="Antrenor" HorizontalAlignment="Left" Margin="77,306,0,0" VerticalAlignment="Top" Height="50" Width="149" Click="ButonAntrenor_Click"/>
+        <Button Content="Cont Nou" HorizontalAlignment="Left" Margin="77,133,0,0" VerticalAlignment="Top" Height="50" Width="149" Click="Button_Click"/>
 
     </Grid>
 </Window>

@@ -20,24 +20,28 @@ namespace TemaABD
     /// </summary>
     public partial class MeniuAntrenor : Window
     {
-        public int sport = 0;
+        MainWindow m;
+        public MeniuAntrenor(MainWindow m)
+        {
+            InitializeComponent();
+            this.m = m;
+        }
+
         public MeniuAntrenor()
         {
             InitializeComponent();
-
+        
         }
-
         private void Button_Click(object sender, RoutedEventArgs e) //delogare
         {
-            if(MessageBox.Show("Vrei sa te deloghezi?","Delogare", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+            if (MessageBox.Show("Vrei sa te deloghezi?", "Delogare", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
             {
                 this.Close();
-
-                var a = App.Current.Windows.OfType<MainWindow>().FirstOrDefault();
-                if (a != null)
+                m.Visibility = Visibility.Visible;
+                if (m != null)
                 {
-                    a.user.Text = string.Empty;
-                    a.pass.Password = string.Empty;
+                    m.user.Text = string.Empty;
+                    m.pass.Password = string.Empty;
                 }
             }
         }
@@ -58,10 +62,8 @@ namespace TemaABD
 
         private void Button_Click_3(object sender, RoutedEventArgs e) //detalii
         {
-
             DetaliiContAntrenor d = new DetaliiContAntrenor();
             d.Show();
-
         }
     }
 }

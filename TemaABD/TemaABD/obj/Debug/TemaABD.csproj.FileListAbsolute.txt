@@ -1,97 +1,43 @@
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\bin\Debug\TemaABD.exe.config
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\bin\Debug\TemaABD.exe
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\bin\Debug\TemaABD.pdb
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\bin\Debug\EntityFramework.dll
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\bin\Debug\EntityFramework.xml
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\TemaABD.csproj.AssemblyReference.cache
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\TemaABD.csproj.SuggestedBindingRedirects.cache
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\MainWindow.g.cs
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\App.g.cs
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\TemaABD_Content.g.cs
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\TemaABD_MarkupCompile.cache
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\TemaABD_MarkupCompile.lref
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\MainWindow.baml
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\TemaABD.g.resources
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\TemaABD.Properties.Resources.resources
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\TemaABD.csproj.GenerateResource.cache
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\TemaABD.csproj.CoreCompileInputs.cache
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\TemaABD.csproj.CopyComplete
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\TemaABD.exe
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\TemaABD.pdb
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\CreareCont.g.cs
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\CreareCont.baml
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\MeniuAntrenor.g.cs
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\MeniuAntrenor.baml
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\Start.g.cs
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\Start.baml
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\DetaliiContAntrenor.g.cs
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\DetaliiContAntrenor.baml
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\ClasamentAntrenor.g.cs
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\EvenimenteAntrenor.g.cs
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\ClasamentAntrenor.baml
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\EvenimenteAntrenor.baml
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\AdaugareEveniment.g.cs
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\AdaugareSport.g.cs
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\AdaugareStudent.g.cs
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\AdaugareEveniment.baml
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\AdaugareSport.baml
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\AdaugareStudent.baml
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\MeniuAdmin.g.cs
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\MeniuAdmin.baml
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\EvenimentEchipe.g.cs
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\EvenimentEchipe.baml
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\RundaCastigata.g.cs
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\RundaCastigata.baml
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\EvenimentIndividual.g.cs
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\EvenimentIndividual.baml
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\bin\Debug\TemaABD.exe.config
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\bin\Debug\TemaABD.exe
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\bin\Debug\TemaABD.pdb
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\bin\Debug\EntityFramework.dll
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\bin\Debug\EntityFramework.xml
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\TemaABD.csproj.AssemblyReference.cache
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\TemaABD.csproj.SuggestedBindingRedirects.cache
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\AdaugareEveniment.g.cs
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\AdaugareSport.g.cs
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\AdaugareStudent.g.cs
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\ClasamentAntrenor.g.cs
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\CreareCont.g.cs
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\DetaliiContAntrenor.g.cs
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\EvenimenteAntrenor.g.cs
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\EvenimentEchipe.g.cs
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\EvenimentIndividual.g.cs
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\MainWindow.g.cs
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\MeniuAdmin.g.cs
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\MeniuAntrenor.g.cs
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\RundaCastigata.g.cs
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\Start.g.cs
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\App.g.cs
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\TemaABD_Content.g.cs
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\TemaABD_MarkupCompile.cache
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\TemaABD_MarkupCompile.lref
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\AdaugareEveniment.baml
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\AdaugareSport.baml
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\AdaugareStudent.baml
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\ClasamentAntrenor.baml
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\CreareCont.baml
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\DetaliiContAntrenor.baml
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\EvenimenteAntrenor.baml
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\EvenimentEchipe.baml
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\EvenimentIndividual.baml
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\MainWindow.baml
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\MeniuAdmin.baml
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\MeniuAntrenor.baml
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\RundaCastigata.baml
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\Start.baml
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\TemaABD.g.resources
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\TemaABD.Properties.Resources.resources
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\TemaABD.csproj.GenerateResource.cache
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\TemaABD.csproj.CoreCompileInputs.cache
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\TemaABD.csproj.CopyComplete
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\TemaABD.exe
-C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\TemaABD.pdb
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\bin\Debug\TemaABD.exe.config
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\bin\Debug\TemaABD.exe
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\bin\Debug\TemaABD.pdb
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\TemaABD.csproj.AssemblyReference.cache
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\TemaABD.csproj.SuggestedBindingRedirects.cache
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\MainWindow.g.cs
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\App.g.cs
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\TemaABD_MarkupCompile.cache
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\TemaABD_MarkupCompile.lref
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\MainWindow.baml
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\TemaABD.g.resources
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\TemaABD.Properties.Resources.resources
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\TemaABD.csproj.GenerateResource.cache
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\TemaABD.csproj.CoreCompileInputs.cache
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\TemaABD.exe
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\TemaABD.pdb
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\TemaABD_Content.g.cs
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\bin\Debug\EntityFramework.dll
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\bin\Debug\EntityFramework.xml
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\TemaABD.csproj.CopyComplete
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\CreareCont.g.cs
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\CreareCont.baml
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\MeniuAdmin.g.cs
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\MeniuAdmin.baml
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\AdugareSport.g.cs
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\AdugareSport.baml
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\AdaugareStudent.g.cs
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\AdaugareStudent.baml
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\AdaugareEveniment.g.cs
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\MeniuAntrenor.g.cs
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\Start.g.cs
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\ClasamentAntrenor.g.cs
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\DetaliiContAntrenor.g.cs
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\EvenimenteAntrenor.g.cs
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\AdaugareEveniment.baml
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\ClasamentAntrenor.baml
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\DetaliiContAntrenor.baml
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\EvenimenteAntrenor.baml
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\MeniuAntrenor.baml
+C:\Users\popes\Desktop\Cursuri\Anul III\_Semestrul I\Aplicatii cu baze de date\TemaABD\TemaABD\obj\Debug\Start.baml

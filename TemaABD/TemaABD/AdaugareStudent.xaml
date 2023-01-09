@@ -5,15 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TemaABD"
         mc:Ignorable="d"
-        Title="AdaugareStudent" Height="300" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="AdaugareStudent" Height="800" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
         <TextBox x:Name="nume" HorizontalAlignment="Left" Margin="142,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
         <TextBlock HorizontalAlignment="Left" Margin="33,14,0,0" TextWrapping="Wrap" Text="Nume Student:" VerticalAlignment="Top" Height="18" Width="97"/>
         <TextBox x:Name="prenume" HorizontalAlignment="Left" Margin="142,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
         <TextBlock HorizontalAlignment="Left" Margin="33,64,0,0" TextWrapping="Wrap" Text="Prenume Student:" VerticalAlignment="Top" Height="18" Width="97"/>
-        <TextBox x:Name="sport" HorizontalAlignment="Left" Margin="142,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
-        <TextBlock HorizontalAlignment="Left" Margin="33,128,0,0" TextWrapping="Wrap" Text="Sport practicat:" VerticalAlignment="Top" Height="18" Width="97"/>
-        <Button Content="Adauga" HorizontalAlignment="Center" Margin="0,186,0,0" VerticalAlignment="Top" Height="38" Width="140" Click="Button_Click"/>
+        <Button Content="Adauga" HorizontalAlignment="Left" Margin="249,436,0,0" VerticalAlignment="Top" Height="38" Width="140" Click="Button_Click"/>
+        <ComboBox x:Name="combo" HorizontalAlignment="Left" Margin="142,125,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="combo_SelectionChanged"/>
+        <DataGrid x:Name="grid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="336,0,0,639" Visibility="Collapsed"/>
+        <TextBlock HorizontalAlignment="Left" Margin="33,127,0,0" TextWrapping="Wrap" Text="Selecteaza sport:" VerticalAlignment="Top" Height="18" Width="97"/>
+        <TextBox x:Name="Alegere" HorizontalAlignment="Left" Margin="142,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22" Visibility="Collapsed"/>
+        <TextBlock x:Name="AlegereEchipa" HorizontalAlignment="Left" Margin="33,196,0,0" TextWrapping="Wrap" Text="Alege o echipa:" VerticalAlignment="Top" Height="18" Width="97" Visibility="Collapsed"/>
 
     </Grid>
 </Window>

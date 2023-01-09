@@ -25,23 +25,24 @@ namespace TemaABD
             InitializeComponent();
         }
 
-        private void Butoncontnou_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)     // buton creare cont nou
         {
-            CreareCont c = new CreareCont();
-            this.Close();
+            CreareCont c = new CreareCont(this);
+            this.Visibility = Visibility.Collapsed;
             c.Show();
         }
 
-        private void Butonantrenor_Click(object sender, RoutedEventArgs e)
+       
+        private void ButonAntrenor_Click(object sender, RoutedEventArgs e)
         {
-            using (var context = new SportsEntities())
+            using (var context = new SportsEntities5())
             {
                 var results = from c in context.Utilizatoris
                               select new
                               {
                                   c.username,
                                   c.parola,
-                                  c.tip,
+                                  c.tip
                               };
 
                 int flag = 0;
@@ -55,8 +56,8 @@ namespace TemaABD
                             {
                                 MessageBox.Show("Antrenor logat!");
                                 flag = 1;
-                                MeniuAntrenor m = new MeniuAntrenor();
-                                //this.Visibility= Visibility.Collapsed;
+                                MeniuAntrenor m = new MeniuAntrenor(this);
+                                this.Visibility = Visibility.Collapsed;
                                 m.Show();
                                 break;
                             }
@@ -71,15 +72,14 @@ namespace TemaABD
                         }
                     }
                 }
-
                 if (flag == 0)
                     MessageBox.Show("Acces interzis!");
             }
         }
 
-        private void Butonadmin_Click(object sender, RoutedEventArgs e)
+        private void ButonAdmin_Click(object sender, RoutedEventArgs e)
         {
-            using (var context = new SportsEntities())
+            using (var context = new SportsEntities5())
             {
                 var results = from c in context.Utilizatoris
                               select new
@@ -99,16 +99,15 @@ namespace TemaABD
                             if (pass.Password == item.parola)
                             {
                                 MessageBox.Show("Administrator logat!");
-                                MeniuAdmin m = new MeniuAdmin();
+                                MeniuAdmin adminMenu = new MeniuAdmin(this);
+                                this.Visibility = Visibility.Collapsed;
+                                adminMenu.Show();
                                 flag = 1;
-                                m.Show();
                                 break;
                             }
                             else
                             {
                                 MessageBox.Show("Eroare la autentificare: verifica datele de logare!");
-                                user.Text = "";
-                                pass.Password = "";
                                 break;
                             }
                         }
@@ -118,8 +117,7 @@ namespace TemaABD
                 if (flag == 0)
                     MessageBox.Show("Acces interzis!");
             }
+
         }
-
     }
-
 }

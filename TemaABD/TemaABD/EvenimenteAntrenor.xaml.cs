@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Runtime.Remoting.Contexts;
@@ -25,55 +24,50 @@ namespace TemaABD
         public EvenimenteAntrenor()
         {
             InitializeComponent();
-            evenimentSportivEchipeDataGrid.Visibility = Visibility.Collapsed;
-            evenimentSportivIndividualDataGrid.Visibility = Visibility.Collapsed;
         }
 
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            using (var context = new SportsEntities())
+            using (var context = new SportsEntities5())
             {
                 var results = from s in context.EvenimentSportivIndividuals
-                              join p1 in context.Studentis on s.player1 equals p1.IDStudent
-                              join p2 in context.Studentis on s.player2 equals p2.IDStudent
-                              join ss in context.SporturiStudents on p1.IDStudent equals ss.IDStudent
-                              join sport in context.Sporturis on ss.IDSport equals sport.IDSport
-                              where s.stare=="Activ"
                               select new
                               {
                                   s.IdEvenimentSportivIndividual,
                                   s.nume,
-                                  a = p1.nume + " " + p1.prenume,
-                                  b = p2.nume + " " + p2.prenume,
+                                  s.player1,
+                                  s.player2,
                                   s.scor1,
-                                  s.scor2,
-                                  c = sport.denumire
+                                  s.scor2
                               };
 
                 evenimentSportivIndividualDataGrid.ItemsSource = results.ToList();
 
-                var results1 = from s in context.EvenimentSportivEchipes
-                               join e1 in context.Echipes on s.echipa1 equals e1.IdEchipe
-                               join e2 in context.Echipes on s.echipa2 equals e2.IdEchipe
-                               join es in context.EchipeStudents on e1.IdEchipe equals es.IdEchipe
-                               join st in context.Studentis on es.IDStudent equals st.IDStudent
-                               join ss in context.SporturiStudents on st.IDStudent equals ss.IDStudent
-                               join sport in context.Sporturis on ss.IDSport equals sport.IDSport
-                               where s.stare == "Activ"
+                var results1 = from s in context.EvenimentSportivIndividuals
                                select new
                                {
-                                   s.IdEvenimentSportivEchipe,
+                                   s.IdEvenimentSportivIndividual,
                                    s.nume,
-                                   a = e1.nume,
-                                   b = e2.nume,
+                                   s.player1,
+                                   s.player2,
                                    s.scor1,
-                                   s.scor2,
-                                   c = sport.denumire
+                                   s.scor2
                                };
 
                 evenimentSportivEchipeDataGrid.ItemsSource = results1.ToList();
             }
+            TemaABD.SportsDataSet sportsDataSet = ((TemaABD.SportsDataSet)(this.FindResource("sportsDataSet")));
+            // Load data into the table EvenimentSportivEchipe. You can modify this code as needed.
+            TemaABD.SportsDataSetTableAdapters.EvenimentSportivEchipeTableAdapter sportsDataSetEvenimentSportivEchipeTableAdapter = new TemaABD.SportsDataSetTableAdapters.EvenimentSportivEchipeTableAdapter();
+            sportsDataSetEvenimentSportivEchipeTableAdapter.Fill(sportsDataSet.EvenimentSportivEchipe);
+            System.Windows.Data.CollectionViewSource evenimentSportivEchipeViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("evenimentSportivEchipeViewSource")));
+            evenimentSportivEchipeViewSource.View.MoveCurrentToFirst();
+            // Load data into the table EvenimentSportivIndividual. You can modify this code as needed.
+            TemaABD.SportsDataSetTableAdapters.EvenimentSportivIndividualTableAdapter sportsDataSetEvenimentSportivIndividualTableAdapter = new TemaABD.SportsDataSetTableAdapters.EvenimentSportivIndividualTableAdapter();
+            sportsDataSetEvenimentSportivIndividualTableAdapter.Fill(sportsDataSet.EvenimentSportivIndividual);
+            System.Windows.Data.CollectionViewSource evenimentSportivIndividualViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("evenimentSportivIndividualViewSource")));
+            evenimentSportivIndividualViewSource.View.MoveCurrentToFirst();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -83,32 +77,9 @@ namespace TemaABD
             this.Close();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void evenimentSportivEchipeDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            evenimentSportivIndividualDataGrid.Visibility = Visibility.Collapsed;
-            evenimentSportivEchipeDataGrid.Visibility = Visibility.Visible;
-        }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            evenimentSportivEchipeDataGrid.Visibility = Visibility.Collapsed;
-            evenimentSportivIndividualDataGrid.Visibility = Visibility.Visible;
-        }
-
-        private void evenimentSportivIndividualDataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-            dynamic @event = evenimentSportivIndividualDataGrid.CurrentCell.Item;
-            EvenimentIndividual ev = new EvenimentIndividual(@event.IdEvenimentSportivIndividual, @event.nume, @event.a, @event.b, @event.scor1, @event.scor2, @event.c);
-            ev.Show();
-            this.Close();
-        }
-
-        private void evenimentSportivEchipeDataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-            dynamic @event = evenimentSportivEchipeDataGrid.CurrentCell.Item;
-            EvenimentEchipe ev = new EvenimentEchipe(@event.IdEvenimentSportivEchipe,@event.nume, @event.a, @event.b, @event.scor1, @event.scor2, @event.c);
-            ev.Show();
-            this.Close();
         }
     }
 }

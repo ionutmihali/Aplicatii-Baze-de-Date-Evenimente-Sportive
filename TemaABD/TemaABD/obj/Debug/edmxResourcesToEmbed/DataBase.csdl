@@ -1,97 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="SportsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-  <EntityType Name="Antrenori">
-    <Key>
-      <PropertyRef Name="IDAntrenori" />
-    </Key>
-    <Property Name="IDAntrenori" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="IDUtilizator" Type="Int32" />
-    <Property Name="IDSport" Type="Int32" />
-    <NavigationProperty Name="Sporturi" Relationship="Self.FK__Antrenori__IDSpo__3C69FB99" FromRole="Antrenori" ToRole="Sporturi" />
-    <NavigationProperty Name="Utilizatori" Relationship="Self.FK__Antrenori__IDUti__3B75D760" FromRole="Antrenori" ToRole="Utilizatori" />
-  </EntityType>
-  <EntityType Name="Echipe">
-    <Key>
-      <PropertyRef Name="IdEchipe" />
-    </Key>
-    <Property Name="IdEchipe" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="nume" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
-    <NavigationProperty Name="EchipeStudents" Relationship="Self.FK__EchipeStu__IdEch__4BAC3F29" FromRole="Echipe" ToRole="EchipeStudent" />
-    <NavigationProperty Name="EvenimentSportivEchipes" Relationship="Self.FK__Eveniment__echip__4E88ABD4" FromRole="Echipe" ToRole="EvenimentSportivEchipe" />
-    <NavigationProperty Name="EvenimentSportivEchipes1" Relationship="Self.FK__Eveniment__echip__4F7CD00D" FromRole="Echipe" ToRole="EvenimentSportivEchipe" />
-    <Property Name="scor" Type="Int32" Nullable="false" />
-  </EntityType>
-  <EntityType Name="EchipeStudent">
-    <Key>
-      <PropertyRef Name="IdEchipeStudent" />
-    </Key>
-    <Property Name="IdEchipeStudent" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="IDStudent" Type="Int32" />
-    <Property Name="IdEchipe" Type="Int32" />
-    <NavigationProperty Name="Echipe" Relationship="Self.FK__EchipeStu__IdEch__4BAC3F29" FromRole="EchipeStudent" ToRole="Echipe" />
-    <NavigationProperty Name="Studenti" Relationship="Self.FK__EchipeStu__IDStu__4AB81AF0" FromRole="EchipeStudent" ToRole="Studenti" />
-  </EntityType>
-  <EntityType Name="EvenimentSportivEchipe">
-    <Key>
-      <PropertyRef Name="IdEvenimentSportivEchipe" />
-    </Key>
-    <Property Name="IdEvenimentSportivEchipe" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="nume" Type="String" MaxLength="32" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="echipa1" Type="Int32" />
-    <Property Name="echipa2" Type="Int32" />
-    <Property Name="scor1" Type="Int32" />
-    <Property Name="scor2" Type="Int32" />
-    <NavigationProperty Name="Echipe" Relationship="Self.FK__Eveniment__echip__4E88ABD4" FromRole="EvenimentSportivEchipe" ToRole="Echipe" />
-    <NavigationProperty Name="Echipe1" Relationship="Self.FK__Eveniment__echip__4F7CD00D" FromRole="EvenimentSportivEchipe" ToRole="Echipe" />
-    <Property Name="stare" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
-  </EntityType>
-  <EntityType Name="EvenimentSportivIndividual">
-    <Key>
-      <PropertyRef Name="IdEvenimentSportivIndividual" />
-    </Key>
-    <Property Name="IdEvenimentSportivIndividual" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="nume" Type="String" MaxLength="32" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="player1" Type="Int32" />
-    <Property Name="player2" Type="Int32" />
-    <Property Name="scor1" Type="Int32" />
-    <Property Name="scor2" Type="Int32" />
-    <NavigationProperty Name="Studenti" Relationship="Self.FK__Eveniment__playe__44FF419A" FromRole="EvenimentSportivIndividual" ToRole="Studenti" />
-    <NavigationProperty Name="Studenti1" Relationship="Self.FK__Eveniment__playe__45F365D3" FromRole="EvenimentSportivIndividual" ToRole="Studenti" />
-    <Property Name="stare" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
-  </EntityType>
-  <EntityType Name="Sporturi">
-    <Key>
-      <PropertyRef Name="IDSport" />
-    </Key>
-    <Property Name="IDSport" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="denumire" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="tip" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
-    <NavigationProperty Name="Antrenoris" Relationship="Self.FK__Antrenori__IDSpo__3C69FB99" FromRole="Sporturi" ToRole="Antrenori" />
-    <NavigationProperty Name="SporturiStudents" Relationship="Self.FK__SporturiS__IDSpo__412EB0B6" FromRole="Sporturi" ToRole="SporturiStudent" />
-  </EntityType>
-  <EntityType Name="SporturiStudent">
-    <Key>
-      <PropertyRef Name="IdSporturiStudent" />
-    </Key>
-    <Property Name="IdSporturiStudent" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="IDSport" Type="Int32" />
-    <Property Name="IDStudent" Type="Int32" />
-    <NavigationProperty Name="Sporturi" Relationship="Self.FK__SporturiS__IDSpo__412EB0B6" FromRole="SporturiStudent" ToRole="Sporturi" />
-    <NavigationProperty Name="Studenti" Relationship="Self.FK__SporturiS__IDStu__4222D4EF" FromRole="SporturiStudent" ToRole="Studenti" />
-    <Property Name="scor" Type="Int32" Nullable="false" />
-  </EntityType>
-  <EntityType Name="Studenti">
-    <Key>
-      <PropertyRef Name="IDStudent" />
-    </Key>
-    <Property Name="IDStudent" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="nume" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="prenume" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
-    <NavigationProperty Name="EchipeStudents" Relationship="Self.FK__EchipeStu__IDStu__4AB81AF0" FromRole="Studenti" ToRole="EchipeStudent" />
-    <NavigationProperty Name="EvenimentSportivIndividuals" Relationship="Self.FK__Eveniment__playe__44FF419A" FromRole="Studenti" ToRole="EvenimentSportivIndividual" />
-    <NavigationProperty Name="EvenimentSportivIndividuals1" Relationship="Self.FK__Eveniment__playe__45F365D3" FromRole="Studenti" ToRole="EvenimentSportivIndividual" />
-    <NavigationProperty Name="SporturiStudents" Relationship="Self.FK__SporturiS__IDStu__4222D4EF" FromRole="Studenti" ToRole="SporturiStudent" />
-  </EntityType>
   <EntityType Name="Utilizatori">
     <Key>
       <PropertyRef Name="IDUtilizator" />
@@ -100,11 +8,185 @@
     <Property Name="username" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="parola" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="tip" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
-    <NavigationProperty Name="Antrenoris" Relationship="Self.FK__Antrenori__IDUti__3B75D760" FromRole="Utilizatori" ToRole="Antrenori" />
+    <NavigationProperty Name="Antrenoris" Relationship="SportsModel.FK__Antrenori__IDUti__412EB0B6" FromRole="Utilizatori" ToRole="Antrenori" />
   </EntityType>
-  <Association Name="FK__Antrenori__IDSpo__3C69FB99">
-    <End Role="Sporturi" Type="Self.Sporturi" Multiplicity="0..1" />
-    <End Role="Antrenori" Type="Self.Antrenori" Multiplicity="*" />
+  <EntityContainer Name="SportsEntities5" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Utilizatoris" EntityType="Self.Utilizatori" />
+    <EntitySet Name="Sporturis" EntityType="SportsModel.Sporturi" />
+    <EntitySet Name="SporturiStudents" EntityType="SportsModel.SporturiStudent" />
+    <AssociationSet Name="FK__SporturiS__IDSpo__2A4B4B5E" Association="SportsModel.FK__SporturiS__IDSpo__2A4B4B5E">
+      <End Role="Sporturi" EntitySet="Sporturis" />
+      <End Role="SporturiStudent" EntitySet="SporturiStudents" />
+    </AssociationSet>
+    <EntitySet Name="Studentis" EntityType="SportsModel.Studenti" />
+    <AssociationSet Name="FK__SporturiS__IDStu__2B3F6F97" Association="SportsModel.FK__SporturiS__IDStu__2B3F6F97">
+      <End Role="Studenti" EntitySet="Studentis" />
+      <End Role="SporturiStudent" EntitySet="SporturiStudents" />
+    </AssociationSet>
+    <EntitySet Name="Antrenoris" EntityType="SportsModel.Antrenori" />
+    <EntitySet Name="Echipes" EntityType="SportsModel.Echipe" />
+    <EntitySet Name="EchipeStudents" EntityType="SportsModel.EchipeStudent" />
+    <EntitySet Name="EvenimentSportivEchipes" EntityType="SportsModel.EvenimentSportivEchipe" />
+    <EntitySet Name="EvenimentSportivIndividuals" EntityType="SportsModel.EvenimentSportivIndividual" />
+    <AssociationSet Name="FK__Antrenori__IDSpo__4222D4EF" Association="SportsModel.FK__Antrenori__IDSpo__4222D4EF">
+      <End Role="Sporturi" EntitySet="Sporturis" />
+      <End Role="Antrenori" EntitySet="Antrenoris" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Antrenori__IDUti__412EB0B6" Association="SportsModel.FK__Antrenori__IDUti__412EB0B6">
+      <End Role="Utilizatori" EntitySet="Utilizatoris" />
+      <End Role="Antrenori" EntitySet="Antrenoris" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EchipeStu__IdEch__4BAC3F29" Association="SportsModel.FK__EchipeStu__IdEch__4BAC3F29">
+      <End Role="Echipe" EntitySet="Echipes" />
+      <End Role="EchipeStudent" EntitySet="EchipeStudents" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Eveniment__echip__4E88ABD4" Association="SportsModel.FK__Eveniment__echip__4E88ABD4">
+      <End Role="Echipe" EntitySet="Echipes" />
+      <End Role="EvenimentSportivEchipe" EntitySet="EvenimentSportivEchipes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Eveniment__echip__4F7CD00D" Association="SportsModel.FK__Eveniment__echip__4F7CD00D">
+      <End Role="Echipe" EntitySet="Echipes" />
+      <End Role="EvenimentSportivEchipe" EntitySet="EvenimentSportivEchipes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EchipeStu__IDStu__4AB81AF0" Association="SportsModel.FK__EchipeStu__IDStu__4AB81AF0">
+      <End Role="Studenti" EntitySet="Studentis" />
+      <End Role="EchipeStudent" EntitySet="EchipeStudents" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Eveniment__playe__44FF419A" Association="SportsModel.FK__Eveniment__playe__44FF419A">
+      <End Role="Studenti" EntitySet="Studentis" />
+      <End Role="EvenimentSportivIndividual" EntitySet="EvenimentSportivIndividuals" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Eveniment__playe__45F365D3" Association="SportsModel.FK__Eveniment__playe__45F365D3">
+      <End Role="Studenti" EntitySet="Studentis" />
+      <End Role="EvenimentSportivIndividual" EntitySet="EvenimentSportivIndividuals" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Echipe__IDSport__36B12243" Association="SportsModel.FK__Echipe__IDSport__36B12243">
+      <End Role="Sporturi" EntitySet="Sporturis" />
+      <End Role="Echipe" EntitySet="Echipes" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Sporturi">
+    <Key>
+      <PropertyRef Name="IDSport" />
+    </Key>
+    <Property Name="IDSport" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="denumire" Type="String" Nullable="false" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="tip" Type="String" Nullable="false" MaxLength="16" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="SporturiStudents" Relationship="SportsModel.FK__SporturiS__IDSpo__2A4B4B5E" FromRole="Sporturi" ToRole="SporturiStudent" />
+    <NavigationProperty Name="Antrenoris" Relationship="SportsModel.FK__Antrenori__IDSpo__4222D4EF" FromRole="Sporturi" ToRole="Antrenori" />
+    <NavigationProperty Name="Echipes" Relationship="SportsModel.FK__Echipe__IDSport__36B12243" FromRole="Sporturi" ToRole="Echipe" />
+  </EntityType>
+  <EntityType Name="SporturiStudent">
+    <Key>
+      <PropertyRef Name="IdSporturiStudent" />
+    </Key>
+    <Property Name="IdSporturiStudent" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDSport" Type="Int32" />
+    <Property Name="IDStudent" Type="Int32" />
+    <NavigationProperty Name="Sporturi" Relationship="SportsModel.FK__SporturiS__IDSpo__2A4B4B5E" FromRole="SporturiStudent" ToRole="Sporturi" />
+    <NavigationProperty Name="Studenti" Relationship="SportsModel.FK__SporturiS__IDStu__2B3F6F97" FromRole="SporturiStudent" ToRole="Studenti" />
+    <Property Name="scor" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__SporturiS__IDSpo__2A4B4B5E">
+    <End Type="SportsModel.Sporturi" Role="Sporturi" Multiplicity="0..1" />
+    <End Type="SportsModel.SporturiStudent" Role="SporturiStudent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sporturi">
+        <PropertyRef Name="IDSport" />
+      </Principal>
+      <Dependent Role="SporturiStudent">
+        <PropertyRef Name="IDSport" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Studenti">
+    <Key>
+      <PropertyRef Name="IDStudent" />
+    </Key>
+    <Property Name="IDStudent" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nume" Type="String" Nullable="false" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="prenume" Type="String" Nullable="false" MaxLength="16" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="SporturiStudents" Relationship="SportsModel.FK__SporturiS__IDStu__2B3F6F97" FromRole="Studenti" ToRole="SporturiStudent" />
+    <NavigationProperty Name="EchipeStudents" Relationship="SportsModel.FK__EchipeStu__IDStu__4AB81AF0" FromRole="Studenti" ToRole="EchipeStudent" />
+    <NavigationProperty Name="EvenimentSportivIndividuals" Relationship="SportsModel.FK__Eveniment__playe__44FF419A" FromRole="Studenti" ToRole="EvenimentSportivIndividual" />
+    <NavigationProperty Name="EvenimentSportivIndividuals1" Relationship="SportsModel.FK__Eveniment__playe__45F365D3" FromRole="Studenti" ToRole="EvenimentSportivIndividual" />
+  </EntityType>
+  <Association Name="FK__SporturiS__IDStu__2B3F6F97">
+    <End Type="SportsModel.Studenti" Role="Studenti" Multiplicity="0..1" />
+    <End Type="SportsModel.SporturiStudent" Role="SporturiStudent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Studenti">
+        <PropertyRef Name="IDStudent" />
+      </Principal>
+      <Dependent Role="SporturiStudent">
+        <PropertyRef Name="IDStudent" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Antrenori">
+    <Key>
+      <PropertyRef Name="IDAntrenori" />
+    </Key>
+    <Property Name="IDAntrenori" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDUtilizator" Type="Int32" />
+    <Property Name="IDSport" Type="Int32" />
+    <NavigationProperty Name="Sporturi" Relationship="SportsModel.FK__Antrenori__IDSpo__4222D4EF" FromRole="Antrenori" ToRole="Sporturi" />
+    <NavigationProperty Name="Utilizatori" Relationship="SportsModel.FK__Antrenori__IDUti__412EB0B6" FromRole="Antrenori" ToRole="Utilizatori" />
+  </EntityType>
+  <EntityType Name="Echipe">
+    <Key>
+      <PropertyRef Name="IdEchipe" />
+    </Key>
+    <Property Name="IdEchipe" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nume" Type="String" Nullable="false" MaxLength="16" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="EchipeStudents" Relationship="SportsModel.FK__EchipeStu__IdEch__4BAC3F29" FromRole="Echipe" ToRole="EchipeStudent" />
+    <NavigationProperty Name="EvenimentSportivEchipes" Relationship="SportsModel.FK__Eveniment__echip__4E88ABD4" FromRole="Echipe" ToRole="EvenimentSportivEchipe" />
+    <NavigationProperty Name="EvenimentSportivEchipes1" Relationship="SportsModel.FK__Eveniment__echip__4F7CD00D" FromRole="Echipe" ToRole="EvenimentSportivEchipe" />
+    <Property Name="scor" Type="Int32" Nullable="false" />
+    <Property Name="IDSport" Type="Int32" />
+    <NavigationProperty Name="Sporturi" Relationship="SportsModel.FK__Echipe__IDSport__36B12243" FromRole="Echipe" ToRole="Sporturi" />
+  </EntityType>
+  <EntityType Name="EchipeStudent">
+    <Key>
+      <PropertyRef Name="IdEchipeStudent" />
+    </Key>
+    <Property Name="IdEchipeStudent" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDStudent" Type="Int32" />
+    <Property Name="IdEchipe" Type="Int32" />
+    <NavigationProperty Name="Echipe" Relationship="SportsModel.FK__EchipeStu__IdEch__4BAC3F29" FromRole="EchipeStudent" ToRole="Echipe" />
+    <NavigationProperty Name="Studenti" Relationship="SportsModel.FK__EchipeStu__IDStu__4AB81AF0" FromRole="EchipeStudent" ToRole="Studenti" />
+  </EntityType>
+  <EntityType Name="EvenimentSportivEchipe">
+    <Key>
+      <PropertyRef Name="IdEvenimentSportivEchipe" />
+    </Key>
+    <Property Name="IdEvenimentSportivEchipe" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="echipa1" Type="Int32" />
+    <Property Name="echipa2" Type="Int32" />
+    <Property Name="scor1" Type="Int32" />
+    <Property Name="scor2" Type="Int32" />
+    <NavigationProperty Name="Echipe" Relationship="SportsModel.FK__Eveniment__echip__4E88ABD4" FromRole="EvenimentSportivEchipe" ToRole="Echipe" />
+    <NavigationProperty Name="Echipe1" Relationship="SportsModel.FK__Eveniment__echip__4F7CD00D" FromRole="EvenimentSportivEchipe" ToRole="Echipe" />
+    <Property Name="nume" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="stare" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="EvenimentSportivIndividual">
+    <Key>
+      <PropertyRef Name="IdEvenimentSportivIndividual" />
+    </Key>
+    <Property Name="IdEvenimentSportivIndividual" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="player1" Type="Int32" />
+    <Property Name="player2" Type="Int32" />
+    <Property Name="scor1" Type="Int32" />
+    <Property Name="scor2" Type="Int32" />
+    <NavigationProperty Name="Studenti" Relationship="SportsModel.FK__Eveniment__playe__44FF419A" FromRole="EvenimentSportivIndividual" ToRole="Studenti" />
+    <NavigationProperty Name="Studenti1" Relationship="SportsModel.FK__Eveniment__playe__45F365D3" FromRole="EvenimentSportivIndividual" ToRole="Studenti" />
+    <Property Name="nume" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="stare" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK__Antrenori__IDSpo__4222D4EF">
+    <End Type="SportsModel.Sporturi" Role="Sporturi" Multiplicity="0..1" />
+    <End Type="SportsModel.Antrenori" Role="Antrenori" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Sporturi">
         <PropertyRef Name="IDSport" />
@@ -114,9 +196,9 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Antrenori__IDUti__3B75D760">
-    <End Role="Utilizatori" Type="Self.Utilizatori" Multiplicity="0..1" />
-    <End Role="Antrenori" Type="Self.Antrenori" Multiplicity="*" />
+  <Association Name="FK__Antrenori__IDUti__412EB0B6">
+    <End Type="SportsModel.Utilizatori" Role="Utilizatori" Multiplicity="0..1" />
+    <End Type="SportsModel.Antrenori" Role="Antrenori" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Utilizatori">
         <PropertyRef Name="IDUtilizator" />
@@ -127,8 +209,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK__EchipeStu__IdEch__4BAC3F29">
-    <End Role="Echipe" Type="Self.Echipe" Multiplicity="0..1" />
-    <End Role="EchipeStudent" Type="Self.EchipeStudent" Multiplicity="*" />
+    <End Type="SportsModel.Echipe" Role="Echipe" Multiplicity="0..1" />
+    <End Type="SportsModel.EchipeStudent" Role="EchipeStudent" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Echipe">
         <PropertyRef Name="IdEchipe" />
@@ -139,8 +221,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK__Eveniment__echip__4E88ABD4">
-    <End Role="Echipe" Type="Self.Echipe" Multiplicity="0..1" />
-    <End Role="EvenimentSportivEchipe" Type="Self.EvenimentSportivEchipe" Multiplicity="*" />
+    <End Type="SportsModel.Echipe" Role="Echipe" Multiplicity="0..1" />
+    <End Type="SportsModel.EvenimentSportivEchipe" Role="EvenimentSportivEchipe" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Echipe">
         <PropertyRef Name="IdEchipe" />
@@ -151,8 +233,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK__Eveniment__echip__4F7CD00D">
-    <End Role="Echipe" Type="Self.Echipe" Multiplicity="0..1" />
-    <End Role="EvenimentSportivEchipe" Type="Self.EvenimentSportivEchipe" Multiplicity="*" />
+    <End Type="SportsModel.Echipe" Role="Echipe" Multiplicity="0..1" />
+    <End Type="SportsModel.EvenimentSportivEchipe" Role="EvenimentSportivEchipe" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Echipe">
         <PropertyRef Name="IdEchipe" />
@@ -163,8 +245,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK__EchipeStu__IDStu__4AB81AF0">
-    <End Role="Studenti" Type="Self.Studenti" Multiplicity="0..1" />
-    <End Role="EchipeStudent" Type="Self.EchipeStudent" Multiplicity="*" />
+    <End Type="SportsModel.Studenti" Role="Studenti" Multiplicity="0..1" />
+    <End Type="SportsModel.EchipeStudent" Role="EchipeStudent" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Studenti">
         <PropertyRef Name="IDStudent" />
@@ -175,8 +257,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK__Eveniment__playe__44FF419A">
-    <End Role="Studenti" Type="Self.Studenti" Multiplicity="0..1" />
-    <End Role="EvenimentSportivIndividual" Type="Self.EvenimentSportivIndividual" Multiplicity="*" />
+    <End Type="SportsModel.Studenti" Role="Studenti" Multiplicity="0..1" />
+    <End Type="SportsModel.EvenimentSportivIndividual" Role="EvenimentSportivIndividual" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Studenti">
         <PropertyRef Name="IDStudent" />
@@ -187,8 +269,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK__Eveniment__playe__45F365D3">
-    <End Role="Studenti" Type="Self.Studenti" Multiplicity="0..1" />
-    <End Role="EvenimentSportivIndividual" Type="Self.EvenimentSportivIndividual" Multiplicity="*" />
+    <End Type="SportsModel.Studenti" Role="Studenti" Multiplicity="0..1" />
+    <End Type="SportsModel.EvenimentSportivIndividual" Role="EvenimentSportivIndividual" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Studenti">
         <PropertyRef Name="IDStudent" />
@@ -198,79 +280,16 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__SporturiS__IDSpo__412EB0B6">
-    <End Role="Sporturi" Type="Self.Sporturi" Multiplicity="0..1" />
-    <End Role="SporturiStudent" Type="Self.SporturiStudent" Multiplicity="*" />
+  <Association Name="FK__Echipe__IDSport__36B12243">
+    <End Type="SportsModel.Sporturi" Role="Sporturi" Multiplicity="0..1" />
+    <End Type="SportsModel.Echipe" Role="Echipe" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Sporturi">
         <PropertyRef Name="IDSport" />
       </Principal>
-      <Dependent Role="SporturiStudent">
+      <Dependent Role="Echipe">
         <PropertyRef Name="IDSport" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__SporturiS__IDStu__4222D4EF">
-    <End Role="Studenti" Type="Self.Studenti" Multiplicity="0..1" />
-    <End Role="SporturiStudent" Type="Self.SporturiStudent" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Studenti">
-        <PropertyRef Name="IDStudent" />
-      </Principal>
-      <Dependent Role="SporturiStudent">
-        <PropertyRef Name="IDStudent" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <EntityContainer Name="SportsEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="Antrenoris" EntityType="Self.Antrenori" />
-    <EntitySet Name="Echipes" EntityType="Self.Echipe" />
-    <EntitySet Name="EchipeStudents" EntityType="Self.EchipeStudent" />
-    <EntitySet Name="EvenimentSportivEchipes" EntityType="Self.EvenimentSportivEchipe" />
-    <EntitySet Name="EvenimentSportivIndividuals" EntityType="Self.EvenimentSportivIndividual" />
-    <EntitySet Name="Sporturis" EntityType="Self.Sporturi" />
-    <EntitySet Name="SporturiStudents" EntityType="Self.SporturiStudent" />
-    <EntitySet Name="Studentis" EntityType="Self.Studenti" />
-    <EntitySet Name="Utilizatoris" EntityType="Self.Utilizatori" />
-    <AssociationSet Name="FK__Antrenori__IDSpo__3C69FB99" Association="Self.FK__Antrenori__IDSpo__3C69FB99">
-      <End Role="Sporturi" EntitySet="Sporturis" />
-      <End Role="Antrenori" EntitySet="Antrenoris" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Antrenori__IDUti__3B75D760" Association="Self.FK__Antrenori__IDUti__3B75D760">
-      <End Role="Utilizatori" EntitySet="Utilizatoris" />
-      <End Role="Antrenori" EntitySet="Antrenoris" />
-    </AssociationSet>
-    <AssociationSet Name="FK__EchipeStu__IdEch__4BAC3F29" Association="Self.FK__EchipeStu__IdEch__4BAC3F29">
-      <End Role="Echipe" EntitySet="Echipes" />
-      <End Role="EchipeStudent" EntitySet="EchipeStudents" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Eveniment__echip__4E88ABD4" Association="Self.FK__Eveniment__echip__4E88ABD4">
-      <End Role="Echipe" EntitySet="Echipes" />
-      <End Role="EvenimentSportivEchipe" EntitySet="EvenimentSportivEchipes" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Eveniment__echip__4F7CD00D" Association="Self.FK__Eveniment__echip__4F7CD00D">
-      <End Role="Echipe" EntitySet="Echipes" />
-      <End Role="EvenimentSportivEchipe" EntitySet="EvenimentSportivEchipes" />
-    </AssociationSet>
-    <AssociationSet Name="FK__EchipeStu__IDStu__4AB81AF0" Association="Self.FK__EchipeStu__IDStu__4AB81AF0">
-      <End Role="Studenti" EntitySet="Studentis" />
-      <End Role="EchipeStudent" EntitySet="EchipeStudents" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Eveniment__playe__44FF419A" Association="Self.FK__Eveniment__playe__44FF419A">
-      <End Role="Studenti" EntitySet="Studentis" />
-      <End Role="EvenimentSportivIndividual" EntitySet="EvenimentSportivIndividuals" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Eveniment__playe__45F365D3" Association="Self.FK__Eveniment__playe__45F365D3">
-      <End Role="Studenti" EntitySet="Studentis" />
-      <End Role="EvenimentSportivIndividual" EntitySet="EvenimentSportivIndividuals" />
-    </AssociationSet>
-    <AssociationSet Name="FK__SporturiS__IDSpo__412EB0B6" Association="Self.FK__SporturiS__IDSpo__412EB0B6">
-      <End Role="Sporturi" EntitySet="Sporturis" />
-      <End Role="SporturiStudent" EntitySet="SporturiStudents" />
-    </AssociationSet>
-    <AssociationSet Name="FK__SporturiS__IDStu__4222D4EF" Association="Self.FK__SporturiS__IDStu__4222D4EF">
-      <End Role="Studenti" EntitySet="Studentis" />
-      <End Role="SporturiStudent" EntitySet="SporturiStudents" />
-    </AssociationSet>
-  </EntityContainer>
 </Schema>

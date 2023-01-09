@@ -5,13 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TemaABD"
         mc:Ignorable="d"
-        Title="ClasamentAntrenor" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+         Title="ClasamentAntrenor" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
-        <Button Content="Inapoi" Margin="106,0,0,40" Height="26" Width="56" Click="Button_Click_1" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
-        <Button Content="Clasament Individuale" HorizontalAlignment="Left" Margin="76,217,0,0" VerticalAlignment="Top" Click="Button_Click_2" Height="42" Width="121"/>
-        <Button Content="Clasament Echipe" HorizontalAlignment="Left" Margin="79,103,0,0" VerticalAlignment="Top" Click="Button_Click" Height="41" Width="115"/>
-        <DataGrid Name="clasamentEchipe" Margin="351,51,80,238"/>
-        <DataGrid Name="clasamentIndividual" Margin="351,217,80,72"/>
-        <ComboBox Name="combo" HorizontalAlignment="Left" Margin="79,173,0,0" VerticalAlignment="Top" Width="115" Height="23" SelectionChanged="combo_SelectionChanged"/>
+        <Button Content="Inapoi" Margin="716,377,0,0" Height="26" Width="56" Click="Button_Click"/>
     </Grid>
 </Window>

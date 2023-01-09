@@ -17,10 +17,10 @@ namespace TemaABD
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Studenti()
         {
+            this.SporturiStudents = new HashSet<SporturiStudent>();
             this.EchipeStudents = new HashSet<EchipeStudent>();
             this.EvenimentSportivIndividuals = new HashSet<EvenimentSportivIndividual>();
             this.EvenimentSportivIndividuals1 = new HashSet<EvenimentSportivIndividual>();
-            this.SporturiStudents = new HashSet<SporturiStudent>();
         }
     
         public int IDStudent { get; set; }
@@ -28,12 +28,12 @@ namespace TemaABD
         public string prenume { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<SporturiStudent> SporturiStudents { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<EchipeStudent> EchipeStudents { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<EvenimentSportivIndividual> EvenimentSportivIndividuals { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<EvenimentSportivIndividual> EvenimentSportivIndividuals1 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<SporturiStudent> SporturiStudents { get; set; }
     }
 }
