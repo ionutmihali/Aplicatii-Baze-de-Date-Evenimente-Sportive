@@ -41,6 +41,7 @@ namespace TemaABD
                 tip = t,
 
             };
+
             context.Utilizatoris.Add(newUser);
             context.SaveChanges();
             
