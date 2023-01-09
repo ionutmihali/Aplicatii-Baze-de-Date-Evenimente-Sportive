@@ -1,4 +1,4 @@
-﻿<Window x:Class="TemaABD.MeniuAdmin"
+<Window x:Class="TemaABD.MeniuAdmin"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -6,11 +6,15 @@
         xmlns:local="clr-namespace:TemaABD"
         mc:Ignorable="d"
         Title="MeniuAdmin" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <SolidColorBrush Color="Moccasin"/>
+    </Window.Background>
     <Grid>
         <Button Content="Adauga Sport" HorizontalAlignment="Left" Margin="50,36,0,0" VerticalAlignment="Top" Height="31" Width="144" Click="Button_Click"/>
         <Button Content="Log Out" HorizontalAlignment="Center" Margin="0,328,0,0" VerticalAlignment="Top" Height="36" Width="160" Click="Button_Click_1"/>
         <Button Content="Adaugare Studenti" HorizontalAlignment="Left" Margin="50,104,0,0" VerticalAlignment="Top" Height="31" Width="144" Click="Button_Click_2"/>
-        <Button Content="Adaugare Eveniment" HorizontalAlignment="Left" Margin="50,175,0,0" VerticalAlignment="Top" Height="23" Width="144" />
+        <Button Content="Adaugare Eveniment" HorizontalAlignment="Left" Margin="50,175,0,0" VerticalAlignment="Top" Height="31" Width="144" Click="Button_Click_3" />
+        <ComboBox x:Name="TipEveniment" HorizontalAlignment="Left" Margin="248,180,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.053,-1.628" SelectionChanged="TipEveniment_SelectionChanged"/>
 
 
     </Grid>
