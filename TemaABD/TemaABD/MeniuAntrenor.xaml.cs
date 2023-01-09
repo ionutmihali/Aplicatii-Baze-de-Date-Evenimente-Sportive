@@ -38,6 +38,7 @@ namespace TemaABD
             {
                 this.Close();
                 m.Visibility = Visibility.Visible;
+
                 if (m != null)
                 {
                     m.user.Text = string.Empty;
