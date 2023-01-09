@@ -10,12 +10,22 @@
 namespace TemaABD
 {
     using System;
-    using System.Collections.ObjectModel;
+    using System.Collections.Generic;
     
     public partial class Utilizatori
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Utilizatori()
+        {
+            this.Antrenoris = new HashSet<Antrenori>();
+        }
+    
         public int IDUtilizator { get; set; }
         public string username { get; set; }
         public string parola { get; set; }
+        public string tip { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Antrenori> Antrenoris { get; set; }
     }
 }

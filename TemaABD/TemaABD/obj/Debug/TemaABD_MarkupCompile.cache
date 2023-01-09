@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\obj\Debug\
+C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\obj\Debug\
 TemaABD
 none
 false
 DEBUG;TRACE
-C:\Users\Ionut\Documents\FACULTATE\ANUL III\SEMESTRUL I\Aplicatii BD\TemaABD\TemaABD\App.xaml
-21343616029
+C:\Users\popes\Desktop\git\Aplicatii-Baze-de-Date\TemaABD\TemaABD\App.xaml
+11375495467
 2-867671577
-13-1462176826
-18-1513936469
-CreareCont.xaml;MainWindow.xaml;
+32-1047633750
+18630427777
+AdaugareEveniment.xaml;AdaugareStudent.xaml;AdugareSport.xaml;ClasamentAntrenor.xaml;CreareCont.xaml;DetaliiContAntrenor.xaml;EvenimenteAntrenor.xaml;MainWindow.xaml;MeniuAdmin.xaml;MeniuAntrenor.xaml;Start.xaml;
 
-False
+True
 

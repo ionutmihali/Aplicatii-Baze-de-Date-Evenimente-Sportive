@@ -11,6 +11,6 @@
         <TextBlock HorizontalAlignment="Left" Margin="32,70,0,0" TextWrapping="Wrap" Text="Sport antrenat:" VerticalAlignment="Top"/>
         <TextBlock x:Name="text1" HorizontalAlignment="Left" Margin="134,25,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
         <TextBlock x:Name="text2" HorizontalAlignment="Left" Margin="134,70,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-        <ComboBox x:Name="combo" HorizontalAlignment="Left" Margin="248,67,0,0" VerticalAlignment="Top" Width="112" Height="22" SelectionChanged="combo_SelectionChanged"/>
+        <ComboBox x:Name="combo" HorizontalAlignment="Left" Margin="248,67,0,0" VerticalAlignment="Top" Width="112" Height="22"/>
     </Grid>
 </Window>

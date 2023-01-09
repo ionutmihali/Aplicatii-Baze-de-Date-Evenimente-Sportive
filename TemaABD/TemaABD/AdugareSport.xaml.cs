@@ -39,6 +39,7 @@ namespace TemaABD
         {
             InsertSport(sport.Text,tipSport.Text);
             MessageBox.Show("Sport adaugat!");
+            this.Visibility = Visibility.Collapsed;
         }
     }
 }

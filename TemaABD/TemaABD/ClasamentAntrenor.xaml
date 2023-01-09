@@ -5,9 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TemaABD"
         mc:Ignorable="d"
-        Title="ClasamentAntrenor" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+         Title="ClasamentAntrenor" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
         <Button Content="Inapoi" Margin="716,377,0,0" Height="26" Width="56" Click="Button_Click"/>
-
     </Grid>
 </Window>

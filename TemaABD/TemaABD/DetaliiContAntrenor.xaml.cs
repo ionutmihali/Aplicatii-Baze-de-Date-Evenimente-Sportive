@@ -27,13 +27,13 @@ namespace TemaABD
         public DetaliiContAntrenor()
         {
             InitializeComponent();
-            string text ="";
+            string text = "";
             var a = Application.Current.Windows.OfType<MainWindow>().FirstOrDefault();
             if (a != null)
             {
                 text = a.user.Text;
             }
-            
+
             text1.Text = text;
             text2.Text = sp;
 
@@ -43,9 +43,9 @@ namespace TemaABD
         public void LoadCombobox()
         {
 
-            var context = new SportsEntities();
+            var context = new SportsEntities5();
 
-            List < Sporturi > s = context.Sporturis.ToList();
+            List<Sporturi> s = context.Sporturis.ToList();
             combo.ItemsSource = s;
             combo.DisplayMemberPath = "denumire";
             combo.SelectedValuePath = "IDSport";

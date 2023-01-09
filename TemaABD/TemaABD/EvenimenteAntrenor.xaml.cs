@@ -29,7 +29,7 @@ namespace TemaABD
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            using (var context = new SportsEntities())
+            using (var context = new SportsEntities5())
             {
                 var results = from s in context.EvenimentSportivIndividuals
                               select new
@@ -79,7 +79,7 @@ namespace TemaABD
 
         private void evenimentSportivEchipeDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-           
+
         }
     }
 }

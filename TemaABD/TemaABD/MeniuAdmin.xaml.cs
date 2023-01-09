@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -54,6 +54,7 @@ namespace TemaABD
             if (MessageBox.Show("Vrei sa te deloghezi?", "Delogare", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
             {
                 this.Close();
+
                 m.Visibility = Visibility.Visible;
                 if (m != null)
                 {

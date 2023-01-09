@@ -42,25 +42,25 @@ namespace TemaABD {
         
         private UtilizatoriDataTable tableUtilizatori;
         
-        private global::System.Data.DataRelation relationFK__Antrenori__IDSpo__3C69FB99;
+        private global::System.Data.DataRelation relationFK__Antrenori__IDSpo__44FF419A;
         
-        private global::System.Data.DataRelation relationFK__Antrenori__IDUti__3B75D760;
+        private global::System.Data.DataRelation relationFK__Antrenori__IDUti__440B1D61;
         
-        private global::System.Data.DataRelation relationFK__EchipeStu__IdEch__4BAC3F29;
+        private global::System.Data.DataRelation relationFK__EchipeStu__IdEch__398D8EEE;
         
-        private global::System.Data.DataRelation relationFK__EchipeStu__IDStu__4AB81AF0;
+        private global::System.Data.DataRelation relationFK__EchipeStu__IDStu__38996AB5;
         
-        private global::System.Data.DataRelation relationFK__Eveniment__echip__4E88ABD4;
+        private global::System.Data.DataRelation relationFK__Eveniment__echip__3C69FB99;
         
-        private global::System.Data.DataRelation relationFK__Eveniment__echip__4F7CD00D;
+        private global::System.Data.DataRelation relationFK__Eveniment__echip__3D5E1FD2;
         
-        private global::System.Data.DataRelation relationFK__Eveniment__playe__44FF419A;
+        private global::System.Data.DataRelation relationFK__Eveniment__playe__32E0915F;
         
-        private global::System.Data.DataRelation relationFK__Eveniment__playe__45F365D3;
+        private global::System.Data.DataRelation relationFK__Eveniment__playe__33D4B598;
         
-        private global::System.Data.DataRelation relationFK__SporturiS__IDSpo__412EB0B6;
+        private global::System.Data.DataRelation relationFK__SporturiS__IDSpo__2F10007B;
         
-        private global::System.Data.DataRelation relationFK__SporturiS__IDStu__4222D4EF;
+        private global::System.Data.DataRelation relationFK__SporturiS__IDStu__300424B4;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -406,16 +406,16 @@ namespace TemaABD {
                     this.tableUtilizatori.InitVars();
                 }
             }
-            this.relationFK__Antrenori__IDSpo__3C69FB99 = this.Relations["FK__Antrenori__IDSpo__3C69FB99"];
-            this.relationFK__Antrenori__IDUti__3B75D760 = this.Relations["FK__Antrenori__IDUti__3B75D760"];
-            this.relationFK__EchipeStu__IdEch__4BAC3F29 = this.Relations["FK__EchipeStu__IdEch__4BAC3F29"];
-            this.relationFK__EchipeStu__IDStu__4AB81AF0 = this.Relations["FK__EchipeStu__IDStu__4AB81AF0"];
-            this.relationFK__Eveniment__echip__4E88ABD4 = this.Relations["FK__Eveniment__echip__4E88ABD4"];
-            this.relationFK__Eveniment__echip__4F7CD00D = this.Relations["FK__Eveniment__echip__4F7CD00D"];
-            this.relationFK__Eveniment__playe__44FF419A = this.Relations["FK__Eveniment__playe__44FF419A"];
-            this.relationFK__Eveniment__playe__45F365D3 = this.Relations["FK__Eveniment__playe__45F365D3"];
-            this.relationFK__SporturiS__IDSpo__412EB0B6 = this.Relations["FK__SporturiS__IDSpo__412EB0B6"];
-            this.relationFK__SporturiS__IDStu__4222D4EF = this.Relations["FK__SporturiS__IDStu__4222D4EF"];
+            this.relationFK__Antrenori__IDSpo__44FF419A = this.Relations["FK__Antrenori__IDSpo__44FF419A"];
+            this.relationFK__Antrenori__IDUti__440B1D61 = this.Relations["FK__Antrenori__IDUti__440B1D61"];
+            this.relationFK__EchipeStu__IdEch__398D8EEE = this.Relations["FK__EchipeStu__IdEch__398D8EEE"];
+            this.relationFK__EchipeStu__IDStu__38996AB5 = this.Relations["FK__EchipeStu__IDStu__38996AB5"];
+            this.relationFK__Eveniment__echip__3C69FB99 = this.Relations["FK__Eveniment__echip__3C69FB99"];
+            this.relationFK__Eveniment__echip__3D5E1FD2 = this.Relations["FK__Eveniment__echip__3D5E1FD2"];
+            this.relationFK__Eveniment__playe__32E0915F = this.Relations["FK__Eveniment__playe__32E0915F"];
+            this.relationFK__Eveniment__playe__33D4B598 = this.Relations["FK__Eveniment__playe__33D4B598"];
+            this.relationFK__SporturiS__IDSpo__2F10007B = this.Relations["FK__SporturiS__IDSpo__2F10007B"];
+            this.relationFK__SporturiS__IDStu__300424B4 = this.Relations["FK__SporturiS__IDStu__300424B4"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -444,46 +444,46 @@ namespace TemaABD {
             base.Tables.Add(this.tableStudenti);
             this.tableUtilizatori = new UtilizatoriDataTable();
             base.Tables.Add(this.tableUtilizatori);
-            this.relationFK__Antrenori__IDSpo__3C69FB99 = new global::System.Data.DataRelation("FK__Antrenori__IDSpo__3C69FB99", new global::System.Data.DataColumn[] {
+            this.relationFK__Antrenori__IDSpo__44FF419A = new global::System.Data.DataRelation("FK__Antrenori__IDSpo__44FF419A", new global::System.Data.DataColumn[] {
                         this.tableSporturi.IDSportColumn}, new global::System.Data.DataColumn[] {
                         this.tableAntrenori.IDSportColumn}, false);
-            this.Relations.Add(this.relationFK__Antrenori__IDSpo__3C69FB99);
-            this.relationFK__Antrenori__IDUti__3B75D760 = new global::System.Data.DataRelation("FK__Antrenori__IDUti__3B75D760", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__Antrenori__IDSpo__44FF419A);
+            this.relationFK__Antrenori__IDUti__440B1D61 = new global::System.Data.DataRelation("FK__Antrenori__IDUti__440B1D61", new global::System.Data.DataColumn[] {
                         this.tableUtilizatori.IDUtilizatorColumn}, new global::System.Data.DataColumn[] {
                         this.tableAntrenori.IDUtilizatorColumn}, false);
-            this.Relations.Add(this.relationFK__Antrenori__IDUti__3B75D760);
-            this.relationFK__EchipeStu__IdEch__4BAC3F29 = new global::System.Data.DataRelation("FK__EchipeStu__IdEch__4BAC3F29", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__Antrenori__IDUti__440B1D61);
+            this.relationFK__EchipeStu__IdEch__398D8EEE = new global::System.Data.DataRelation("FK__EchipeStu__IdEch__398D8EEE", new global::System.Data.DataColumn[] {
                         this.tableEchipe.IdEchipeColumn}, new global::System.Data.DataColumn[] {
                         this.tableEchipeStudent.IdEchipeColumn}, false);
-            this.Relations.Add(this.relationFK__EchipeStu__IdEch__4BAC3F29);
-            this.relationFK__EchipeStu__IDStu__4AB81AF0 = new global::System.Data.DataRelation("FK__EchipeStu__IDStu__4AB81AF0", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__EchipeStu__IdEch__398D8EEE);
+            this.relationFK__EchipeStu__IDStu__38996AB5 = new global::System.Data.DataRelation("FK__EchipeStu__IDStu__38996AB5", new global::System.Data.DataColumn[] {
                         this.tableStudenti.IDStudentColumn}, new global::System.Data.DataColumn[] {
                         this.tableEchipeStudent.IDStudentColumn}, false);
-            this.Relations.Add(this.relationFK__EchipeStu__IDStu__4AB81AF0);
-            this.relationFK__Eveniment__echip__4E88ABD4 = new global::System.Data.DataRelation("FK__Eveniment__echip__4E88ABD4", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__EchipeStu__IDStu__38996AB5);
+            this.relationFK__Eveniment__echip__3C69FB99 = new global::System.Data.DataRelation("FK__Eveniment__echip__3C69FB99", new global::System.Data.DataColumn[] {
                         this.tableEchipe.IdEchipeColumn}, new global::System.Data.DataColumn[] {
                         this.tableEvenimentSportivEchipe.echipa1Column}, false);
-            this.Relations.Add(this.relationFK__Eveniment__echip__4E88ABD4);
-            this.relationFK__Eveniment__echip__4F7CD00D = new global::System.Data.DataRelation("FK__Eveniment__echip__4F7CD00D", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__Eveniment__echip__3C69FB99);
+            this.relationFK__Eveniment__echip__3D5E1FD2 = new global::System.Data.DataRelation("FK__Eveniment__echip__3D5E1FD2", new global::System.Data.DataColumn[] {
                         this.tableEchipe.IdEchipeColumn}, new global::System.Data.DataColumn[] {
                         this.tableEvenimentSportivEchipe.echipa2Column}, false);
-            this.Relations.Add(this.relationFK__Eveniment__echip__4F7CD00D);
-            this.relationFK__Eveniment__playe__44FF419A = new global::System.Data.DataRelation("FK__Eveniment__playe__44FF419A", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__Eveniment__echip__3D5E1FD2);
+            this.relationFK__Eveniment__playe__32E0915F = new global::System.Data.DataRelation("FK__Eveniment__playe__32E0915F", new global::System.Data.DataColumn[] {
                         this.tableStudenti.IDStudentColumn}, new global::System.Data.DataColumn[] {
                         this.tableEvenimentSportivIndividual.player1Column}, false);
-            this.Relations.Add(this.relationFK__Eveniment__playe__44FF419A);
-            this.relationFK__Eveniment__playe__45F365D3 = new global::System.Data.DataRelation("FK__Eveniment__playe__45F365D3", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__Eveniment__playe__32E0915F);
+            this.relationFK__Eveniment__playe__33D4B598 = new global::System.Data.DataRelation("FK__Eveniment__playe__33D4B598", new global::System.Data.DataColumn[] {
                         this.tableStudenti.IDStudentColumn}, new global::System.Data.DataColumn[] {
                         this.tableEvenimentSportivIndividual.player2Column}, false);
-            this.Relations.Add(this.relationFK__Eveniment__playe__45F365D3);
-            this.relationFK__SporturiS__IDSpo__412EB0B6 = new global::System.Data.DataRelation("FK__SporturiS__IDSpo__412EB0B6", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__Eveniment__playe__33D4B598);
+            this.relationFK__SporturiS__IDSpo__2F10007B = new global::System.Data.DataRelation("FK__SporturiS__IDSpo__2F10007B", new global::System.Data.DataColumn[] {
                         this.tableSporturi.IDSportColumn}, new global::System.Data.DataColumn[] {
                         this.tableSporturiStudent.IDSportColumn}, false);
-            this.Relations.Add(this.relationFK__SporturiS__IDSpo__412EB0B6);
-            this.relationFK__SporturiS__IDStu__4222D4EF = new global::System.Data.DataRelation("FK__SporturiS__IDStu__4222D4EF", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__SporturiS__IDSpo__2F10007B);
+            this.relationFK__SporturiS__IDStu__300424B4 = new global::System.Data.DataRelation("FK__SporturiS__IDStu__300424B4", new global::System.Data.DataColumn[] {
                         this.tableStudenti.IDStudentColumn}, new global::System.Data.DataColumn[] {
                         this.tableSporturiStudent.IDStudentColumn}, false);
-            this.Relations.Add(this.relationFK__SporturiS__IDStu__4222D4EF);
+            this.Relations.Add(this.relationFK__SporturiS__IDStu__300424B4);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -729,17 +729,17 @@ namespace TemaABD {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public AntrenoriRow AddAntrenoriRow(UtilizatoriRow parentUtilizatoriRowByFK__Antrenori__IDUti__3B75D760, SporturiRow parentSporturiRowByFK__Antrenori__IDSpo__3C69FB99) {
+            public AntrenoriRow AddAntrenoriRow(UtilizatoriRow parentUtilizatoriRowByFK__Antrenori__IDUti__440B1D61, SporturiRow parentSporturiRowByFK__Antrenori__IDSpo__44FF419A) {
                 AntrenoriRow rowAntrenoriRow = ((AntrenoriRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         null,
                         null};
-                if ((parentUtilizatoriRowByFK__Antrenori__IDUti__3B75D760 != null)) {
-                    columnValuesArray[1] = parentUtilizatoriRowByFK__Antrenori__IDUti__3B75D760[0];
+                if ((parentUtilizatoriRowByFK__Antrenori__IDUti__440B1D61 != null)) {
+                    columnValuesArray[1] = parentUtilizatoriRowByFK__Antrenori__IDUti__440B1D61[0];
                 }
-                if ((parentSporturiRowByFK__Antrenori__IDSpo__3C69FB99 != null)) {
-                    columnValuesArray[2] = parentSporturiRowByFK__Antrenori__IDSpo__3C69FB99[0];
+                if ((parentSporturiRowByFK__Antrenori__IDSpo__44FF419A != null)) {
+                    columnValuesArray[2] = parentSporturiRowByFK__Antrenori__IDSpo__44FF419A[0];
                 }
                 rowAntrenoriRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowAntrenoriRow);
@@ -1303,17 +1303,17 @@ namespace TemaABD {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public EchipeStudentRow AddEchipeStudentRow(StudentiRow parentStudentiRowByFK__EchipeStu__IDStu__4AB81AF0, EchipeRow parentEchipeRowByFK__EchipeStu__IdEch__4BAC3F29) {
+            public EchipeStudentRow AddEchipeStudentRow(StudentiRow parentStudentiRowByFK__EchipeStu__IDStu__38996AB5, EchipeRow parentEchipeRowByFK__EchipeStu__IdEch__398D8EEE) {
                 EchipeStudentRow rowEchipeStudentRow = ((EchipeStudentRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         null,
                         null};
-                if ((parentStudentiRowByFK__EchipeStu__IDStu__4AB81AF0 != null)) {
-                    columnValuesArray[1] = parentStudentiRowByFK__EchipeStu__IDStu__4AB81AF0[0];
+                if ((parentStudentiRowByFK__EchipeStu__IDStu__38996AB5 != null)) {
+                    columnValuesArray[1] = parentStudentiRowByFK__EchipeStu__IDStu__38996AB5[0];
                 }
-                if ((parentEchipeRowByFK__EchipeStu__IdEch__4BAC3F29 != null)) {
-                    columnValuesArray[2] = parentEchipeRowByFK__EchipeStu__IdEch__4BAC3F29[0];
+                if ((parentEchipeRowByFK__EchipeStu__IdEch__398D8EEE != null)) {
+                    columnValuesArray[2] = parentEchipeRowByFK__EchipeStu__IdEch__398D8EEE[0];
                 }
                 rowEchipeStudentRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowEchipeStudentRow);
@@ -1629,7 +1629,7 @@ namespace TemaABD {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public EvenimentSportivEchipeRow AddEvenimentSportivEchipeRow(string nume, EchipeRow parentEchipeRowByFK__Eveniment__echip__4E88ABD4, EchipeRow parentEchipeRowByFK__Eveniment__echip__4F7CD00D, int scor1, int scor2) {
+            public EvenimentSportivEchipeRow AddEvenimentSportivEchipeRow(string nume, EchipeRow parentEchipeRowByFK__Eveniment__echip__3C69FB99, EchipeRow parentEchipeRowByFK__Eveniment__echip__3D5E1FD2, int scor1, int scor2) {
                 EvenimentSportivEchipeRow rowEvenimentSportivEchipeRow = ((EvenimentSportivEchipeRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1638,11 +1638,11 @@ namespace TemaABD {
                         null,
                         scor1,
                         scor2};
-                if ((parentEchipeRowByFK__Eveniment__echip__4E88ABD4 != null)) {
-                    columnValuesArray[2] = parentEchipeRowByFK__Eveniment__echip__4E88ABD4[0];
+                if ((parentEchipeRowByFK__Eveniment__echip__3C69FB99 != null)) {
+                    columnValuesArray[2] = parentEchipeRowByFK__Eveniment__echip__3C69FB99[0];
                 }
-                if ((parentEchipeRowByFK__Eveniment__echip__4F7CD00D != null)) {
-                    columnValuesArray[3] = parentEchipeRowByFK__Eveniment__echip__4F7CD00D[0];
+                if ((parentEchipeRowByFK__Eveniment__echip__3D5E1FD2 != null)) {
+                    columnValuesArray[3] = parentEchipeRowByFK__Eveniment__echip__3D5E1FD2[0];
                 }
                 rowEvenimentSportivEchipeRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowEvenimentSportivEchipeRow);
@@ -1969,7 +1969,7 @@ namespace TemaABD {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public EvenimentSportivIndividualRow AddEvenimentSportivIndividualRow(string nume, StudentiRow parentStudentiRowByFK__Eveniment__playe__44FF419A, StudentiRow parentStudentiRowByFK__Eveniment__playe__45F365D3, int scor1, int scor2) {
+            public EvenimentSportivIndividualRow AddEvenimentSportivIndividualRow(string nume, StudentiRow parentStudentiRowByFK__Eveniment__playe__32E0915F, StudentiRow parentStudentiRowByFK__Eveniment__playe__33D4B598, int scor1, int scor2) {
                 EvenimentSportivIndividualRow rowEvenimentSportivIndividualRow = ((EvenimentSportivIndividualRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1978,11 +1978,11 @@ namespace TemaABD {
                         null,
                         scor1,
                         scor2};
-                if ((parentStudentiRowByFK__Eveniment__playe__44FF419A != null)) {
-                    columnValuesArray[2] = parentStudentiRowByFK__Eveniment__playe__44FF419A[0];
+                if ((parentStudentiRowByFK__Eveniment__playe__32E0915F != null)) {
+                    columnValuesArray[2] = parentStudentiRowByFK__Eveniment__playe__32E0915F[0];
                 }
-                if ((parentStudentiRowByFK__Eveniment__playe__45F365D3 != null)) {
-                    columnValuesArray[3] = parentStudentiRowByFK__Eveniment__playe__45F365D3[0];
+                if ((parentStudentiRowByFK__Eveniment__playe__33D4B598 != null)) {
+                    columnValuesArray[3] = parentStudentiRowByFK__Eveniment__playe__33D4B598[0];
                 }
                 rowEvenimentSportivIndividualRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowEvenimentSportivIndividualRow);
@@ -2573,17 +2573,17 @@ namespace TemaABD {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SporturiStudentRow AddSporturiStudentRow(SporturiRow parentSporturiRowByFK__SporturiS__IDSpo__412EB0B6, StudentiRow parentStudentiRowByFK__SporturiS__IDStu__4222D4EF) {
+            public SporturiStudentRow AddSporturiStudentRow(SporturiRow parentSporturiRowByFK__SporturiS__IDSpo__2F10007B, StudentiRow parentStudentiRowByFK__SporturiS__IDStu__300424B4) {
                 SporturiStudentRow rowSporturiStudentRow = ((SporturiStudentRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         null,
                         null};
-                if ((parentSporturiRowByFK__SporturiS__IDSpo__412EB0B6 != null)) {
-                    columnValuesArray[1] = parentSporturiRowByFK__SporturiS__IDSpo__412EB0B6[0];
+                if ((parentSporturiRowByFK__SporturiS__IDSpo__2F10007B != null)) {
+                    columnValuesArray[1] = parentSporturiRowByFK__SporturiS__IDSpo__2F10007B[0];
                 }
-                if ((parentStudentiRowByFK__SporturiS__IDStu__4222D4EF != null)) {
-                    columnValuesArray[2] = parentStudentiRowByFK__SporturiS__IDStu__4222D4EF[0];
+                if ((parentStudentiRowByFK__SporturiS__IDStu__300424B4 != null)) {
+                    columnValuesArray[2] = parentStudentiRowByFK__SporturiS__IDStu__300424B4[0];
                 }
                 rowSporturiStudentRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowSporturiStudentRow);
@@ -3427,10 +3427,10 @@ namespace TemaABD {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public SporturiRow SporturiRow {
                 get {
-                    return ((SporturiRow)(this.GetParentRow(this.Table.ParentRelations["FK__Antrenori__IDSpo__3C69FB99"])));
+                    return ((SporturiRow)(this.GetParentRow(this.Table.ParentRelations["FK__Antrenori__IDSpo__44FF419A"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Antrenori__IDSpo__3C69FB99"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Antrenori__IDSpo__44FF419A"]);
                 }
             }
             
@@ -3438,10 +3438,10 @@ namespace TemaABD {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public UtilizatoriRow UtilizatoriRow {
                 get {
-                    return ((UtilizatoriRow)(this.GetParentRow(this.Table.ParentRelations["FK__Antrenori__IDUti__3B75D760"])));
+                    return ((UtilizatoriRow)(this.GetParentRow(this.Table.ParentRelations["FK__Antrenori__IDUti__440B1D61"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Antrenori__IDUti__3B75D760"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Antrenori__IDUti__440B1D61"]);
                 }
             }
             
@@ -3509,33 +3509,33 @@ namespace TemaABD {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public EchipeStudentRow[] GetEchipeStudentRows() {
-                if ((this.Table.ChildRelations["FK__EchipeStu__IdEch__4BAC3F29"] == null)) {
+                if ((this.Table.ChildRelations["FK__EchipeStu__IdEch__398D8EEE"] == null)) {
                     return new EchipeStudentRow[0];
                 }
                 else {
-                    return ((EchipeStudentRow[])(base.GetChildRows(this.Table.ChildRelations["FK__EchipeStu__IdEch__4BAC3F29"])));
+                    return ((EchipeStudentRow[])(base.GetChildRows(this.Table.ChildRelations["FK__EchipeStu__IdEch__398D8EEE"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public EvenimentSportivEchipeRow[] GetEvenimentSportivEchipeRowsByFK__Eveniment__echip__4E88ABD4() {
-                if ((this.Table.ChildRelations["FK__Eveniment__echip__4E88ABD4"] == null)) {
+            public EvenimentSportivEchipeRow[] GetEvenimentSportivEchipeRowsByFK__Eveniment__echip__3C69FB99() {
+                if ((this.Table.ChildRelations["FK__Eveniment__echip__3C69FB99"] == null)) {
                     return new EvenimentSportivEchipeRow[0];
                 }
                 else {
-                    return ((EvenimentSportivEchipeRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Eveniment__echip__4E88ABD4"])));
+                    return ((EvenimentSportivEchipeRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Eveniment__echip__3C69FB99"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public EvenimentSportivEchipeRow[] GetEvenimentSportivEchipeRowsByFK__Eveniment__echip__4F7CD00D() {
-                if ((this.Table.ChildRelations["FK__Eveniment__echip__4F7CD00D"] == null)) {
+            public EvenimentSportivEchipeRow[] GetEvenimentSportivEchipeRowsByFK__Eveniment__echip__3D5E1FD2() {
+                if ((this.Table.ChildRelations["FK__Eveniment__echip__3D5E1FD2"] == null)) {
                     return new EvenimentSportivEchipeRow[0];
                 }
                 else {
-                    return ((EvenimentSportivEchipeRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Eveniment__echip__4F7CD00D"])));
+                    return ((EvenimentSportivEchipeRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Eveniment__echip__3D5E1FD2"])));
                 }
             }
         }
@@ -3601,10 +3601,10 @@ namespace TemaABD {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public EchipeRow EchipeRow {
                 get {
-                    return ((EchipeRow)(this.GetParentRow(this.Table.ParentRelations["FK__EchipeStu__IdEch__4BAC3F29"])));
+                    return ((EchipeRow)(this.GetParentRow(this.Table.ParentRelations["FK__EchipeStu__IdEch__398D8EEE"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__EchipeStu__IdEch__4BAC3F29"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__EchipeStu__IdEch__398D8EEE"]);
                 }
             }
             
@@ -3612,10 +3612,10 @@ namespace TemaABD {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public StudentiRow StudentiRow {
                 get {
-                    return ((StudentiRow)(this.GetParentRow(this.Table.ParentRelations["FK__EchipeStu__IDStu__4AB81AF0"])));
+                    return ((StudentiRow)(this.GetParentRow(this.Table.ParentRelations["FK__EchipeStu__IDStu__38996AB5"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__EchipeStu__IDStu__4AB81AF0"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__EchipeStu__IDStu__38996AB5"]);
                 }
             }
             
@@ -3746,23 +3746,23 @@ namespace TemaABD {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public EchipeRow EchipeRowByFK__Eveniment__echip__4E88ABD4 {
+            public EchipeRow EchipeRowByFK__Eveniment__echip__3C69FB99 {
                 get {
-                    return ((EchipeRow)(this.GetParentRow(this.Table.ParentRelations["FK__Eveniment__echip__4E88ABD4"])));
+                    return ((EchipeRow)(this.GetParentRow(this.Table.ParentRelations["FK__Eveniment__echip__3C69FB99"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Eveniment__echip__4E88ABD4"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Eveniment__echip__3C69FB99"]);
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public EchipeRow EchipeRowByFK__Eveniment__echip__4F7CD00D {
+            public EchipeRow EchipeRowByFK__Eveniment__echip__3D5E1FD2 {
                 get {
-                    return ((EchipeRow)(this.GetParentRow(this.Table.ParentRelations["FK__Eveniment__echip__4F7CD00D"])));
+                    return ((EchipeRow)(this.GetParentRow(this.Table.ParentRelations["FK__Eveniment__echip__3D5E1FD2"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Eveniment__echip__4F7CD00D"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Eveniment__echip__3D5E1FD2"]);
                 }
             }
             
@@ -3917,23 +3917,23 @@ namespace TemaABD {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public StudentiRow StudentiRowByFK__Eveniment__playe__44FF419A {
+            public StudentiRow StudentiRowByFK__Eveniment__playe__32E0915F {
                 get {
-                    return ((StudentiRow)(this.GetParentRow(this.Table.ParentRelations["FK__Eveniment__playe__44FF419A"])));
+                    return ((StudentiRow)(this.GetParentRow(this.Table.ParentRelations["FK__Eveniment__playe__32E0915F"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Eveniment__playe__44FF419A"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Eveniment__playe__32E0915F"]);
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public StudentiRow StudentiRowByFK__Eveniment__playe__45F365D3 {
+            public StudentiRow StudentiRowByFK__Eveniment__playe__33D4B598 {
                 get {
-                    return ((StudentiRow)(this.GetParentRow(this.Table.ParentRelations["FK__Eveniment__playe__45F365D3"])));
+                    return ((StudentiRow)(this.GetParentRow(this.Table.ParentRelations["FK__Eveniment__playe__33D4B598"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Eveniment__playe__45F365D3"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Eveniment__playe__33D4B598"]);
                 }
             }
             
@@ -4036,22 +4036,22 @@ namespace TemaABD {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public AntrenoriRow[] GetAntrenoriRows() {
-                if ((this.Table.ChildRelations["FK__Antrenori__IDSpo__3C69FB99"] == null)) {
+                if ((this.Table.ChildRelations["FK__Antrenori__IDSpo__44FF419A"] == null)) {
                     return new AntrenoriRow[0];
                 }
                 else {
-                    return ((AntrenoriRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Antrenori__IDSpo__3C69FB99"])));
+                    return ((AntrenoriRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Antrenori__IDSpo__44FF419A"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public SporturiStudentRow[] GetSporturiStudentRows() {
-                if ((this.Table.ChildRelations["FK__SporturiS__IDSpo__412EB0B6"] == null)) {
+                if ((this.Table.ChildRelations["FK__SporturiS__IDSpo__2F10007B"] == null)) {
                     return new SporturiStudentRow[0];
                 }
                 else {
-                    return ((SporturiStudentRow[])(base.GetChildRows(this.Table.ChildRelations["FK__SporturiS__IDSpo__412EB0B6"])));
+                    return ((SporturiStudentRow[])(base.GetChildRows(this.Table.ChildRelations["FK__SporturiS__IDSpo__2F10007B"])));
                 }
             }
         }
@@ -4117,10 +4117,10 @@ namespace TemaABD {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public SporturiRow SporturiRow {
                 get {
-                    return ((SporturiRow)(this.GetParentRow(this.Table.ParentRelations["FK__SporturiS__IDSpo__412EB0B6"])));
+                    return ((SporturiRow)(this.GetParentRow(this.Table.ParentRelations["FK__SporturiS__IDSpo__2F10007B"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__SporturiS__IDSpo__412EB0B6"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__SporturiS__IDSpo__2F10007B"]);
                 }
             }
             
@@ -4128,10 +4128,10 @@ namespace TemaABD {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public StudentiRow StudentiRow {
                 get {
-                    return ((StudentiRow)(this.GetParentRow(this.Table.ParentRelations["FK__SporturiS__IDStu__4222D4EF"])));
+                    return ((StudentiRow)(this.GetParentRow(this.Table.ParentRelations["FK__SporturiS__IDStu__300424B4"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__SporturiS__IDStu__4222D4EF"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__SporturiS__IDStu__300424B4"]);
                 }
             }
             
@@ -4210,44 +4210,44 @@ namespace TemaABD {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public EchipeStudentRow[] GetEchipeStudentRows() {
-                if ((this.Table.ChildRelations["FK__EchipeStu__IDStu__4AB81AF0"] == null)) {
+                if ((this.Table.ChildRelations["FK__EchipeStu__IDStu__38996AB5"] == null)) {
                     return new EchipeStudentRow[0];
                 }
                 else {
-                    return ((EchipeStudentRow[])(base.GetChildRows(this.Table.ChildRelations["FK__EchipeStu__IDStu__4AB81AF0"])));
+                    return ((EchipeStudentRow[])(base.GetChildRows(this.Table.ChildRelations["FK__EchipeStu__IDStu__38996AB5"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public EvenimentSportivIndividualRow[] GetEvenimentSportivIndividualRowsByFK__Eveniment__playe__44FF419A() {
-                if ((this.Table.ChildRelations["FK__Eveniment__playe__44FF419A"] == null)) {
+            public EvenimentSportivIndividualRow[] GetEvenimentSportivIndividualRowsByFK__Eveniment__playe__32E0915F() {
+                if ((this.Table.ChildRelations["FK__Eveniment__playe__32E0915F"] == null)) {
                     return new EvenimentSportivIndividualRow[0];
                 }
                 else {
-                    return ((EvenimentSportivIndividualRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Eveniment__playe__44FF419A"])));
+                    return ((EvenimentSportivIndividualRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Eveniment__playe__32E0915F"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public EvenimentSportivIndividualRow[] GetEvenimentSportivIndividualRowsByFK__Eveniment__playe__45F365D3() {
-                if ((this.Table.ChildRelations["FK__Eveniment__playe__45F365D3"] == null)) {
+            public EvenimentSportivIndividualRow[] GetEvenimentSportivIndividualRowsByFK__Eveniment__playe__33D4B598() {
+                if ((this.Table.ChildRelations["FK__Eveniment__playe__33D4B598"] == null)) {
                     return new EvenimentSportivIndividualRow[0];
                 }
                 else {
-                    return ((EvenimentSportivIndividualRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Eveniment__playe__45F365D3"])));
+                    return ((EvenimentSportivIndividualRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Eveniment__playe__33D4B598"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public SporturiStudentRow[] GetSporturiStudentRows() {
-                if ((this.Table.ChildRelations["FK__SporturiS__IDStu__4222D4EF"] == null)) {
+                if ((this.Table.ChildRelations["FK__SporturiS__IDStu__300424B4"] == null)) {
                     return new SporturiStudentRow[0];
                 }
                 else {
-                    return ((SporturiStudentRow[])(base.GetChildRows(this.Table.ChildRelations["FK__SporturiS__IDStu__4222D4EF"])));
+                    return ((SporturiStudentRow[])(base.GetChildRows(this.Table.ChildRelations["FK__SporturiS__IDStu__300424B4"])));
                 }
             }
         }
@@ -4313,11 +4313,11 @@ namespace TemaABD {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public AntrenoriRow[] GetAntrenoriRows() {
-                if ((this.Table.ChildRelations["FK__Antrenori__IDUti__3B75D760"] == null)) {
+                if ((this.Table.ChildRelations["FK__Antrenori__IDUti__440B1D61"] == null)) {
                     return new AntrenoriRow[0];
                 }
                 else {
-                    return ((AntrenoriRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Antrenori__IDUti__3B75D760"])));
+                    return ((AntrenoriRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Antrenori__IDUti__440B1D61"])));
                 }
             }
         }

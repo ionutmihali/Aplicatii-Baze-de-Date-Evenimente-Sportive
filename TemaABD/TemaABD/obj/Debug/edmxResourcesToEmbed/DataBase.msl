@@ -1,12 +1,95 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="SportsModelStoreContainer" CdmEntityContainer="SportsEntities">
+  <EntityContainerMapping StorageEntityContainer="SportsModelStoreContainer" CdmEntityContainer="SportsEntities5">
     <EntitySetMapping Name="Utilizatoris">
       <EntityTypeMapping TypeName="SportsModel.Utilizatori">
         <MappingFragment StoreEntitySet="Utilizatori">
           <ScalarProperty Name="IDUtilizator" ColumnName="IDUtilizator" />
           <ScalarProperty Name="username" ColumnName="username" />
           <ScalarProperty Name="parola" ColumnName="parola" />
+          <ScalarProperty Name="tip" ColumnName="tip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sporturis">
+      <EntityTypeMapping TypeName="SportsModel.Sporturi">
+        <MappingFragment StoreEntitySet="Sporturi">
+          <ScalarProperty Name="tip" ColumnName="tip" />
+          <ScalarProperty Name="denumire" ColumnName="denumire" />
+          <ScalarProperty Name="IDSport" ColumnName="IDSport" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SporturiStudents">
+      <EntityTypeMapping TypeName="SportsModel.SporturiStudent">
+        <MappingFragment StoreEntitySet="SporturiStudent">
+          <ScalarProperty Name="scor" ColumnName="scor" />
+          <ScalarProperty Name="IDStudent" ColumnName="IDStudent" />
+          <ScalarProperty Name="IDSport" ColumnName="IDSport" />
+          <ScalarProperty Name="IdSporturiStudent" ColumnName="IdSporturiStudent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Studentis">
+      <EntityTypeMapping TypeName="SportsModel.Studenti">
+        <MappingFragment StoreEntitySet="Studenti">
+          <ScalarProperty Name="prenume" ColumnName="prenume" />
+          <ScalarProperty Name="nume" ColumnName="nume" />
+          <ScalarProperty Name="IDStudent" ColumnName="IDStudent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Antrenoris">
+      <EntityTypeMapping TypeName="SportsModel.Antrenori">
+        <MappingFragment StoreEntitySet="Antrenori">
+          <ScalarProperty Name="IDSport" ColumnName="IDSport" />
+          <ScalarProperty Name="IDUtilizator" ColumnName="IDUtilizator" />
+          <ScalarProperty Name="IDAntrenori" ColumnName="IDAntrenori" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Echipes">
+      <EntityTypeMapping TypeName="SportsModel.Echipe">
+        <MappingFragment StoreEntitySet="Echipe">
+          <ScalarProperty Name="IDSport" ColumnName="IDSport" />
+          <ScalarProperty Name="scor" ColumnName="scor" />
+          <ScalarProperty Name="nume" ColumnName="nume" />
+          <ScalarProperty Name="IdEchipe" ColumnName="IdEchipe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EchipeStudents">
+      <EntityTypeMapping TypeName="SportsModel.EchipeStudent">
+        <MappingFragment StoreEntitySet="EchipeStudent">
+          <ScalarProperty Name="IdEchipe" ColumnName="IdEchipe" />
+          <ScalarProperty Name="IDStudent" ColumnName="IDStudent" />
+          <ScalarProperty Name="IdEchipeStudent" ColumnName="IdEchipeStudent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EvenimentSportivEchipes">
+      <EntityTypeMapping TypeName="SportsModel.EvenimentSportivEchipe">
+        <MappingFragment StoreEntitySet="EvenimentSportivEchipe">
+          <ScalarProperty Name="stare" ColumnName="stare" />
+          <ScalarProperty Name="nume" ColumnName="nume" />
+          <ScalarProperty Name="scor2" ColumnName="scor2" />
+          <ScalarProperty Name="scor1" ColumnName="scor1" />
+          <ScalarProperty Name="echipa2" ColumnName="echipa2" />
+          <ScalarProperty Name="echipa1" ColumnName="echipa1" />
+          <ScalarProperty Name="IdEvenimentSportivEchipe" ColumnName="IdEvenimentSportivEchipe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EvenimentSportivIndividuals">
+      <EntityTypeMapping TypeName="SportsModel.EvenimentSportivIndividual">
+        <MappingFragment StoreEntitySet="EvenimentSportivIndividual">
+          <ScalarProperty Name="stare" ColumnName="stare" />
+          <ScalarProperty Name="nume" ColumnName="nume" />
+          <ScalarProperty Name="scor2" ColumnName="scor2" />
+          <ScalarProperty Name="scor1" ColumnName="scor1" />
+          <ScalarProperty Name="player2" ColumnName="player2" />
+          <ScalarProperty Name="player1" ColumnName="player1" />
+          <ScalarProperty Name="IdEvenimentSportivIndividual" ColumnName="IdEvenimentSportivIndividual" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

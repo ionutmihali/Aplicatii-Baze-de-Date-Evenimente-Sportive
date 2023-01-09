@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace TemaABD
 {
-    internal class CAdmin : CUtilizator
+    internal class CAdmin : CUtlizator
     {
-
     }
 }

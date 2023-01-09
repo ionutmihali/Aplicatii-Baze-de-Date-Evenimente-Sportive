@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TemaABD"
         mc:Ignorable="d"
-        Title="EvenimenteAntrenor" Height="450" Width="800" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+       Title="EvenimenteAntrenor" Height="450" Width="800" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Window.Resources>
         <CollectionViewSource x:Key="studentiViewSource7" d:DesignSource="{d:DesignInstance {x:Type local:Studenti}}"/>
         <local:SportsDataSet x:Key="sportsDataSet"/>
