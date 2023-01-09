@@ -25,7 +25,6 @@ namespace TemaABD
         public int IdEchipe { get; set; }
         public string nume { get; set; }
         public int scor { get; set; }
-        public Nullable<int> IDSport { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<EchipeStudent> EchipeStudents { get; set; }
@@ -33,6 +32,5 @@ namespace TemaABD
         public virtual ICollection<EvenimentSportivEchipe> EvenimentSportivEchipes { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<EvenimentSportivEchipe> EvenimentSportivEchipes1 { get; set; }
-        public virtual Sporturi Sporturi { get; set; }
     }
 }

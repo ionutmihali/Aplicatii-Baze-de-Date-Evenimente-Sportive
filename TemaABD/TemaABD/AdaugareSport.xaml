@@ -1,0 +1,18 @@
+﻿<Window x:Class="TemaABD.AdugareSport"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TemaABD"
+        mc:Ignorable="d"
+        Title="AdugareSport" Height="200" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button Content="Adauga" HorizontalAlignment="Center" Margin="0,116,0,0" VerticalAlignment="Top" Height="26" Width="160" Click="Button_Click"/>
+        <TextBox x:Name="sport" HorizontalAlignment="Left" Margin="142,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBlock HorizontalAlignment="Left" Margin="33,14,0,0" TextWrapping="Wrap" Text="Denumire Sport:" VerticalAlignment="Top" Height="18" Width="97"/>
+        <TextBox x:Name="tipSport" HorizontalAlignment="Left" Margin="142,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBlock HorizontalAlignment="Left" Margin="33,64,0,0" TextWrapping="Wrap" Text="Tip Sport:" VerticalAlignment="Top" Height="18" Width="97"/>
+
+
+    </Grid>
+</Window>
