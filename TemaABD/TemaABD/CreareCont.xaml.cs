@@ -21,7 +21,9 @@ namespace TemaABD
     /// </summary>
     public partial class CreareCont : Window
     {
+
         private string tip;
+
         public CreareCont()
         {
             InitializeComponent();
