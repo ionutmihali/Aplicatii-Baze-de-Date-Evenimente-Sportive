@@ -78,7 +78,8 @@ CREATE TABLE Echipe
 (
 	IdEchipe int IDENTITY(4000,1) NOT NULL PRIMARY KEY,
 	nume varchar(16) NOT NULL,
-	scor int NOT NULL
+	scor int NOT NULL,
+	IDSport int FOREIGN KEY REFERENCES Sporturi(IDSport)
 )
 
 if OBJECT_ID('EchipeStudent','U') is not null
@@ -107,27 +108,33 @@ CREATE TABLE EvenimentSportivEchipe
 )
 
 
---select*
---from Studenti
+select*
+from Studenti
+
+select*
+from Sporturi
 
 --select*
---from Sporturi
+--from EchipeStudent
 
---select*
---from Utilizatori
+select*
+from Utilizatori
 
---select*
---from SporturiStudent
+select*
+from SporturiStudent
 
---select*
---from Antrenori
+select*
+from Echipe
 
---select*
----from EvenimentSportivEchipe
+select*
+from Antrenori
 
---select*
---from EvenimentSportivIndividual
+select*
+from EvenimentSportivEchipe
 
+
+select*
+from EvenimentSportivIndividual
 
 -- utilizatori
 
@@ -192,16 +199,16 @@ INSERT INTO EvenimentSportivEchipe (nume, scor1, scor2, stare) VALUES ('Cupa Suc
 
 --Echipe
 
-INSERT INTO Echipe (nume, scor) VALUES ('FC Amateurs', '0')
-INSERT INTO Echipe (nume, scor) VALUES ('Real Amateurs', '0')
-INSERT INTO Echipe (nume, scor) VALUES ('Rogue', '0')
-INSERT INTO Echipe (nume, scor) VALUES ('City', '0')
-INSERT INTO Echipe (nume, scor) VALUES ('Stars', '0')
-INSERT INTO Echipe (nume, scor) VALUES ('Giants', '0')
-INSERT INTO Echipe (nume, scor) VALUES ('Lions', '0')
-INSERT INTO Echipe (nume, scor) VALUES ('Warriors', '0')
-INSERT INTO Echipe (nume, scor) VALUES ('Eagles', '0')
-INSERT INTO Echipe (nume, scor) VALUES ('Bulls', '0')
+INSERT INTO Echipe (nume, scor,IDSport) VALUES ('FC Amateurs', '0',100)
+INSERT INTO Echipe (nume, scor,IDSport) VALUES ('Real Amateurs', '0',102)
+INSERT INTO Echipe (nume, scor,IDSport) VALUES ('Rogue', '0',102)
+INSERT INTO Echipe (nume, scor,IDSport) VALUES ('City', '0',103)
+INSERT INTO Echipe (nume, scor,IDSport) VALUES ('Stars', '0',104)
+INSERT INTO Echipe (nume, scor,IDSport) VALUES ('Giants', '0',100)
+INSERT INTO Echipe (nume, scor,IDSport) VALUES ('Lions', '0',100)
+INSERT INTO Echipe (nume, scor,IDSport) VALUES ('Warriors', '0',106)
+INSERT INTO Echipe (nume, scor,IDSport) VALUES ('Eagles', '0',101)
+INSERT INTO Echipe (nume, scor,IDSport) VALUES ('Bulls', '0',101)
 
 --Antrenori
 
@@ -226,13 +233,8 @@ INSERT INTO SporturiStudent (IDSport, IDStudent, scor) VALUES (109, 1009, '0')
 
 --EchipeStudenti
 
-INSERT INTO EchipeStudent (IDStudent, IdEchipe) VALUES (1000, 4000)
-INSERT INTO EchipeStudent (IDStudent, IdEchipe) VALUES (1001, 4001)
-INSERT INTO EchipeStudent (IDStudent, IdEchipe) VALUES (1002, 4002)
-INSERT INTO EchipeStudent (IDStudent, IdEchipe) VALUES (1003, 4003)
-INSERT INTO EchipeStudent (IDStudent, IdEchipe) VALUES (1004, 4004)
-INSERT INTO EchipeStudent (IDStudent, IdEchipe) VALUES (1005, 4000)
-INSERT INTO EchipeStudent (IDStudent, IdEchipe) VALUES (1006, 4000)
-INSERT INTO EchipeStudent (IDStudent, IdEchipe) VALUES (1007, 4005)
-INSERT INTO EchipeStudent (IDStudent, IdEchipe) VALUES (1008, 4006)
-INSERT INTO EchipeStudent (IDStudent, IdEchipe) VALUES (1009, 4008)
+INSERT INTO EchipeStudent(IDStudent,IdEchipe) VALUES (1001,4001)
+INSERT INTO EchipeStudent(IDStudent,IdEchipe) VALUES (1002,4002)
+INSERT INTO EchipeStudent(IDStudent,IdEchipe) VALUES (1003,4003)
+INSERT INTO EchipeStudent(IDStudent,IdEchipe) VALUES (1004,4004)
+INSERT INTO EchipeStudent(IDStudent,IdEchipe) VALUES (1006,4007)
