@@ -21,7 +21,7 @@ namespace TemaABD
     public partial class MeniuAdmin : Window
     {
         MainWindow m;
-        public string tipSport { get; set; }    
+        public string tipSport { get; set; }
         public MeniuAdmin(MainWindow m)
         {
             InitializeComponent();
@@ -47,7 +47,7 @@ namespace TemaABD
         {
             AdugareSport adugareSport = new AdugareSport();
             adugareSport.Show();
-          
+
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)   //buton Log Out

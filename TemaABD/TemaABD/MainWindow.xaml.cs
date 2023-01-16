@@ -32,10 +32,10 @@ namespace TemaABD
             c.Show();
         }
 
-       
+
         private void ButonAntrenor_Click(object sender, RoutedEventArgs e)
         {
-            using (var context = new SportsEntities5())
+            using (var context = new SportsEntities())
             {
                 var results = from c in context.Utilizatoris
                               select new
@@ -55,10 +55,10 @@ namespace TemaABD
                             if (pass.Password == item.parola)
                             {
                                 MessageBox.Show("Antrenor logat!");
-                                flag = 1;
                                 MeniuAntrenor m = new MeniuAntrenor(this);
                                 this.Visibility = Visibility.Collapsed;
                                 m.Show();
+                                flag = 1;
                                 break;
                             }
                             else
@@ -79,7 +79,7 @@ namespace TemaABD
 
         private void ButonAdmin_Click(object sender, RoutedEventArgs e)
         {
-            using (var context = new SportsEntities5())
+            using (var context = new SportsEntities())
             {
                 var results = from c in context.Utilizatoris
                               select new

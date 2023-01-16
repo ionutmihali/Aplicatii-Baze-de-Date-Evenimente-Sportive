@@ -30,7 +30,7 @@ namespace TemaABD
         }
         static void InsertExample(string u, string p, string t)
         {
-            var context = new SportsEntities5();
+            var context = new SportsEntities();
             var newUser = new Utilizatori()
             {
                 username = u,
@@ -71,8 +71,8 @@ namespace TemaABD
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            InsertExample(user.Text, pass.Password,this.tip);
-            MessageBox.Show("User inserted");          
+            InsertExample(user.Text, pass.Password, this.tip);
+            MessageBox.Show("User inserted");
         }
 
         private void OnBackButtonClick(object sender, RoutedEventArgs e)

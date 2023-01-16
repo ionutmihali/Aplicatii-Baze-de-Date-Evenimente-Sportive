@@ -31,7 +31,7 @@ namespace TemaABD
         public void LoadCombobox()
         {
 
-            var context = new SportsEntities5();
+            var context = new SportsEntities();
 
             List<Sporturi> s = context.Sporturis.ToList();
             combo.ItemsSource = s;
@@ -42,7 +42,7 @@ namespace TemaABD
         }
         static void InsertStudent(string n, string p)
         {
-            var context = new SportsEntities5();
+            var context = new SportsEntities();
             var newStudent = new Studenti()
             {
                 nume = n,
@@ -54,7 +54,7 @@ namespace TemaABD
 
         static int SelectStudent(string n, string p)
         {
-            using (var context = new SportsEntities5())
+            using (var context = new SportsEntities())
             {
                 var results = from s in context.Studentis
                               select new
@@ -83,7 +83,7 @@ namespace TemaABD
 
         static int SelectEchipa(string n)
         {
-            using (var context = new SportsEntities5())
+            using (var context = new SportsEntities())
             {
                 var results = from s in context.Echipes
                               select new
@@ -107,7 +107,7 @@ namespace TemaABD
 
         static int SelectSport(string sport)
         {
-            using (var context = new SportsEntities5())
+            using (var context = new SportsEntities())
             {
                 var results = from s in context.Sporturis
                               select new
@@ -131,11 +131,11 @@ namespace TemaABD
         }
         static void InsertStudentSports(int idStud, int idSport)
         {
-            var context = new SportsEntities5();
+            var context = new SportsEntities();
             var newStudentSport = new SporturiStudent()
             {
-               IDSport = idSport,
-               IDStudent = idStud
+                IDSport = idSport,
+                IDStudent = idStud
             };
             context.SporturiStudents.Add(newStudentSport);
             context.SaveChanges();
@@ -143,7 +143,7 @@ namespace TemaABD
 
         static void InsertEchipeStudent(int idStud, int idEchipa)
         {
-            var context = new SportsEntities5();
+            var context = new SportsEntities();
             var newEchipaStud = new EchipeStudent()
             {
                 IdEchipe = idEchipa,
@@ -154,7 +154,7 @@ namespace TemaABD
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-           
+
 
             InsertStudent(nume.Text, prenume.Text);
 
@@ -162,7 +162,7 @@ namespace TemaABD
             int idSport = Convert.ToInt32(combo.SelectedValue);
 
             InsertStudentSports(idStudentAdaugat, idSport);
-           
+
 
             int idStud = SelectStudent(nume.Text, prenume.Text);
             int idEch = SelectEchipa(Alegere.Text);
@@ -178,7 +178,7 @@ namespace TemaABD
 
             int idSport = Convert.ToInt32(combo.SelectedValue);
 
-            using (var context = new SportsEntities5())
+            using (var context = new SportsEntities())
             {
                 var results = from s in context.Echipes
                               where s.IDSport == idSport

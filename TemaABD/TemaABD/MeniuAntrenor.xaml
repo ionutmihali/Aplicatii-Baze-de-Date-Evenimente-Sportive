@@ -5,11 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TemaABD"
         mc:Ignorable="d"
-        Title="MeniuAdmin" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="MeniuAntrenor" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Window.Background>
+        <SolidColorBrush Color="gray"/>
+    </Window.Background>
     <Grid>
-        <Button Content="Delogare" Margin="690,372,0,0" Height="32" Width="66" Click="Button_Click"/>
-        <Button Content="Evenimente" HorizontalAlignment="Left" Margin="75,119,0,0" VerticalAlignment="Top" Height="34" Width="75" Click="Button_Click_1"/>
-        <Button Content="Clasament" HorizontalAlignment="Left" Margin="75,254,0,0" VerticalAlignment="Top" Height="34" Width="75" Click="Button_Click_2"/>
-        <Button Content="Detalii cont" Margin="695,10,22,0" Height="26" VerticalAlignment="Top" Click="Button_Click_3"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="/635-6358836_dia-del-profesor-de-educacion-fisica-hd-png.png" Stretch="Uniform"/>
+        </Grid.Background>
+        <Button Content="Delogare" Margin="690,372,0,0" Height="32" Width="66" Click="Button_Click" Background="LightGray" BorderBrush="Gray"/>
+        <Button Content="Evenimente" HorizontalAlignment="Left" Margin="75,119,0,0" VerticalAlignment="Top" Height="34" Width="75" Click="Button_Click_1" Background="LightGray" BorderBrush="Gray"/>
+        <Button Content="Clasament" HorizontalAlignment="Left" Margin="75,254,0,0" VerticalAlignment="Top" Height="34" Width="75" Click="Button_Click_2" Background="LightGray" BorderBrush="Gray"/>
+        <Button Content="Detalii cont" Margin="695,10,22,0" Height="26" VerticalAlignment="Top" Click="Button_Click_3" Background="LightGray" BorderBrush="Gray"/>
+
     </Grid>
 </Window>

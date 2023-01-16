@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D4B62F68-FC7B-4DB8-9FA5-16448C9473DD}</ProjectGuid>
+    <ProjectGuid>{434ADC84-F5A7-42C7-A030-12490AB095A2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>TemaABD</RootNamespace>
     <AssemblyName>TemaABD</AssemblyName>
@@ -14,6 +14,8 @@
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -41,6 +43,15 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="MaterialDesignColors, Version=1.0.1.0, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.2.1.0\lib\net462\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=1.0.1.0, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.4.7.0\lib\net462\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xaml.Behaviors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Xaml.Behaviors.Wpf.1.1.39\lib\net45\Microsoft.Xaml.Behaviors.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
@@ -67,11 +78,11 @@
     <Compile Include="AdaugareEveniment.xaml.cs">
       <DependentUpon>AdaugareEveniment.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AdaugareSport.xaml.cs">
+      <DependentUpon>AdaugareSport.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AdaugareStudent.xaml.cs">
       <DependentUpon>AdaugareStudent.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="AdugareSport.xaml.cs">
-      <DependentUpon>AdugareSport.xaml</DependentUpon>
     </Compile>
     <Compile Include="Antrenori.cs">
       <DependentUpon>DataBase.tt</DependentUpon>
@@ -109,6 +120,12 @@
     <Compile Include="EvenimenteAntrenor.xaml.cs">
       <DependentUpon>EvenimenteAntrenor.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EvenimentEchipe.xaml.cs">
+      <DependentUpon>EvenimentEchipe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EvenimentIndividual.xaml.cs">
+      <DependentUpon>EvenimentIndividual.xaml</DependentUpon>
+    </Compile>
     <Compile Include="EvenimentSportivEchipe.cs">
       <DependentUpon>DataBase.tt</DependentUpon>
     </Compile>
@@ -121,10 +138,8 @@
     <Compile Include="MeniuAntrenor.xaml.cs">
       <DependentUpon>MeniuAntrenor.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SportsDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SportsDataSet.xsd</DependentUpon>
+    <Compile Include="RundaCastigata.xaml.cs">
+      <DependentUpon>RundaCastigata.xaml</DependentUpon>
     </Compile>
     <Compile Include="Sporturi.cs">
       <DependentUpon>DataBase.tt</DependentUpon>
@@ -145,11 +160,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AdaugareStudent.xaml">
+    <Page Include="AdaugareSport.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AdugareSport.xaml">
+    <Page Include="AdaugareStudent.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -169,6 +184,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="EvenimentEchipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EvenimentIndividual.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -177,9 +200,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="CAdmin.cs" />
-    <Compile Include="CAntrenor.cs" />
-    <Compile Include="CUtlizator.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -191,6 +211,10 @@
     <Page Include="MeniuAntrenor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RundaCastigata.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Start.xaml">
       <SubType>Designer</SubType>
@@ -223,21 +247,12 @@
       <DependentUpon>DataBase.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\TemaABD.Properties.Resources.datasource" />
     <None Include="Properties\DataSources\TemaABD.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\TemaABD.Properties.Settings1.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="SportsDataSet.xsc">
-      <DependentUpon>SportsDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="SportsDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>SportsDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="SportsDataSet.xss">
-      <DependentUpon>SportsDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -248,6 +263,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="635-6358836_dia-del-profesor-de-educacion-fisica-hd-png.png" />
+    <Resource Include="Sports-620x330.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="DataBase.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>DataBase.edmx</DependentUpon>
@@ -258,7 +276,13 @@
       <DependentUpon>DataBase.edmx</DependentUpon>
       <LastGenOutput>DataBase.cs</LastGenOutput>
     </Content>
-    <Resource Include="Sports-620x330.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\MaterialDesignThemes.4.7.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.7.0\build\MaterialDesignThemes.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MaterialDesignThemes.4.7.0\build\MaterialDesignThemes.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MaterialDesignThemes.4.7.0\build\MaterialDesignThemes.targets'))" />
+  </Target>
 </Project>

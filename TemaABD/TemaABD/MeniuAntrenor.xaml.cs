@@ -27,17 +27,15 @@ namespace TemaABD
             this.m = m;
         }
 
-        public MeniuAntrenor()
-        {
-            InitializeComponent();
-        
-        }
+   
         private void Button_Click(object sender, RoutedEventArgs e) //delogare
         {
             if (MessageBox.Show("Vrei sa te deloghezi?", "Delogare", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
             {
                 this.Close();
+
                 m.Visibility = Visibility.Visible;
+
                 if (m != null)
                 {
                     m.user.Text = string.Empty;
@@ -48,16 +46,16 @@ namespace TemaABD
 
         private void Button_Click_1(object sender, RoutedEventArgs e) //evenimente
         {
-            EvenimenteAntrenor ev = new EvenimenteAntrenor();
+            EvenimenteAntrenor ev = new EvenimenteAntrenor(m);
             ev.Show();
-            this.Close();
+            this.Visibility = Visibility.Collapsed;
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e) //clasament
         {
-            ClasamentAntrenor cl = new ClasamentAntrenor();
+            ClasamentAntrenor cl = new ClasamentAntrenor(m);
             cl.Show();
-            this.Close();
+            this.Visibility = Visibility.Collapsed;
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e) //detalii

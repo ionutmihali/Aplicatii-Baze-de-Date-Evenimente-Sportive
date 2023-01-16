@@ -15,20 +15,13 @@ using System.Windows.Shapes;
 namespace TemaABD
 {
     /// <summary>
-    /// Interaction logic for Start.xaml
+    /// Interaction logic for RundaCastigata.xaml
     /// </summary>
-    public partial class Start : Window
+    public partial class RundaCastigata : Window
     {
-        public Start()
+        public RundaCastigata()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            MainWindow m = new MainWindow();
-            this.Close();
-            m.Show();
         }
     }
 }

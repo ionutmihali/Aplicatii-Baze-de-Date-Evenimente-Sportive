@@ -7,14 +7,14 @@
         mc:Ignorable="d"
         Title="MeniuAdmin" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Window.Background>
-        <SolidColorBrush Color="Moccasin"/>
+        <SolidColorBrush Color="gray"/>
     </Window.Background>
     <Grid>
-        <Button Content="Adauga Sport" HorizontalAlignment="Left" Margin="50,36,0,0" VerticalAlignment="Top" Height="31" Width="144" Click="Button_Click"/>
-        <Button Content="Log Out" HorizontalAlignment="Center" Margin="0,328,0,0" VerticalAlignment="Top" Height="36" Width="160" Click="Button_Click_1"/>
-        <Button Content="Adaugare Studenti" HorizontalAlignment="Left" Margin="50,104,0,0" VerticalAlignment="Top" Height="31" Width="144" Click="Button_Click_2"/>
-        <Button Content="Adaugare Eveniment" HorizontalAlignment="Left" Margin="50,175,0,0" VerticalAlignment="Top" Height="31" Width="144" Click="Button_Click_3" />
-        <ComboBox x:Name="TipEveniment" HorizontalAlignment="Left" Margin="248,180,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.053,-1.628" SelectionChanged="TipEveniment_SelectionChanged"/>
+        <Button Content="Adauga Sport" HorizontalAlignment="Left" Margin="50,36,0,0" VerticalAlignment="Top" Height="31" Width="144" Click="Button_Click" Background="LightGray" BorderBrush="Gray"/>
+        <Button Content="Log Out" HorizontalAlignment="Center" Margin="0,328,0,0" VerticalAlignment="Top" Height="36" Width="160" Click="Button_Click_1" Background="LightGray" BorderBrush="Gray"/>
+        <Button Content="Adaugare Studenti" HorizontalAlignment="Left" Margin="50,104,0,0" VerticalAlignment="Top" Height="31" Width="144" Click="Button_Click_2" Background="LightGray" BorderBrush="Gray"/>
+        <Button Content="Adaugare Eveniment" HorizontalAlignment="Left" Margin="50,175,0,0" VerticalAlignment="Top" Height="31" Width="144" Click="Button_Click_3" Background="LightGray" BorderBrush="Gray"/>
+        <ComboBox x:Name="TipEveniment" HorizontalAlignment="Left" Margin="248,180,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.053,-1.628" SelectionChanged="TipEveniment_SelectionChanged" Background="LightGray" BorderBrush="Gray"/>
 
 
     </Grid>
