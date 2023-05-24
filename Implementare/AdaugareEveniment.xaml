@@ -1,0 +1,25 @@
+﻿<Window x:Class="TemaABD.AdaugareEveniment"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TemaABD"
+        mc:Ignorable="d"
+        Title="AdaugareEveniment" Height="500" Width="500" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Window.Background>
+        <SolidColorBrush Color="Gray"/>
+    </Window.Background>
+    <Grid>
+        <TextBox x:Name="eveniment" HorizontalAlignment="Left" Margin="142,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22" Background="LightGray" BorderBrush="Gray"/>
+        <TextBlock HorizontalAlignment="Left" Margin="33,14,0,0" TextWrapping="Wrap" Text="Nume Eveniment:" VerticalAlignment="Top" Height="18" Width="97"/>
+        <Button Content="Adauga" HorizontalAlignment="Left" Margin="70,383,0,0" VerticalAlignment="Top" Height="29" Width="132" Click="Button_Click" Background="LightGray" BorderBrush="Gray"/>
+        <TextBox x:Name="player1" HorizontalAlignment="Left" Margin="142,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22" Background="LightGray" BorderBrush="Gray"/>
+        <TextBlock HorizontalAlignment="Left" Margin="33,53,0,0" TextWrapping="Wrap" Text="Student/Echipa1:" VerticalAlignment="Top" Height="18" Width="97"/>
+        <TextBox x:Name="player2" HorizontalAlignment="Left" Margin="142,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22" Background="LightGray" BorderBrush="Gray"/>
+        <TextBlock HorizontalAlignment="Left" Margin="33,88,0,0" TextWrapping="Wrap" Text="Student/Echipa2:" VerticalAlignment="Top" Height="18" Width="97"/>
+        <DataGrid x:Name="datagrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="84,142,84,141" Visibility="Visible" Background="LightGray" BorderBrush="Gray"/>
+        <Button Content="Vezi Studenti" HorizontalAlignment="Left" Margin="318,50,0,0" VerticalAlignment="Top" Height="18" Width="95" Click="Button_Click_1" Background="LightGray" BorderBrush="Gray" />
+        <Button Content="Vezi Echipe" HorizontalAlignment="Left" Margin="318,88,0,0" VerticalAlignment="Top" Height="18" Width="95" Click="Button_Click_2" Background="LightGray" BorderBrush="Gray"/>
+
+    </Grid>
+</Window>

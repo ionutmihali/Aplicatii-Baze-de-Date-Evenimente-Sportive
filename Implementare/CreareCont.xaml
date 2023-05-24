@@ -1,0 +1,24 @@
+﻿<Window x:Class="TemaABD.CreareCont"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TemaABD"
+        mc:Ignorable="d"
+        Title="CreareCont" Height="450" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <SolidColorBrush Color="gray"/>
+    </Window.Background>
+    <Grid>
+        <TextBox x:Name="user" HorizontalAlignment="Left" Margin="115,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="20" Background="LightGray" BorderBrush="Gray"/>
+        <PasswordBox x:Name="pass" HorizontalAlignment="Left" Margin="115,90,0,0" VerticalAlignment="Top" Width="120" Height="21" Background="LightGray" BorderBrush="Gray"/>
+        <TextBlock HorizontalAlignment="Left" Margin="26,41,0,0" TextWrapping="Wrap" Text="Username:" VerticalAlignment="Top" Height="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="26,90,0,0" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top" Height="18"/>
+        <Button Content="Cont Nou" HorizontalAlignment="Center" Margin="0,285,0,0" VerticalAlignment="Top" Height="49" Width="152" Click="Button_Click" Background="LightGray" BorderBrush="Gray"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="200,0,0,0" VerticalAlignment="Top" Height="22" Width="100" Click="OnBackButtonClick" Background="LightGray" BorderBrush="Gray"/>
+        <ComboBox x:Name="TipUtilizator" HorizontalAlignment="Left" Margin="115,143,0,0" VerticalAlignment="Top" Width="120" IsDropDownOpen="True" SelectionChanged="TipUtilizator_SelectionChanged" Height="24" Background="LightGray" BorderBrush="Gray">
+            <ComboBox Width="120"/>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="26,146,0,0" TextWrapping="Wrap" Text="Tip cont:" VerticalAlignment="Top" Height="21" Width="56"/>
+    </Grid>
+</Window>

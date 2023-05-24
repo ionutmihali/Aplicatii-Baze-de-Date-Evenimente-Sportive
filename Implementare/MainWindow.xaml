@@ -1,0 +1,22 @@
+﻿<Window x:Class="TemaABD.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TemaABD"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <SolidColorBrush Color="gray"/>
+    </Window.Background>
+    <Grid>
+        <TextBox x:Name="user" HorizontalAlignment="Left" Margin="118,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="LightGray" BorderBrush="Gray"/>
+        <PasswordBox x:Name="pass" HorizontalAlignment="Left" Margin="118,66,0,0" VerticalAlignment="Top" Width="120" Background="LightGray" BorderBrush="Gray"/>
+        <TextBlock HorizontalAlignment="Left" Margin="29,23,0,0" TextWrapping="Wrap" Text="Username:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="29,66,0,0" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top"/>
+        <Button x:Name="ButonAdmin" Content="Admin" HorizontalAlignment="Left" Margin="77,217,0,0" VerticalAlignment="Top" Height="50" Width="149" Click="ButonAdmin_Click" RenderTransformOrigin="-0.173,-1.209" Background="LightGray" BorderBrush="Gray"/>
+        <Button x:Name="ButonAntrenor" Content="Antrenor" HorizontalAlignment="Left" Margin="77,306,0,0" VerticalAlignment="Top" Height="50" Width="149" Click="ButonAntrenor_Click" Background="LightGray" BorderBrush="Gray"/>
+        <Button Content="Cont Nou" HorizontalAlignment="Left" Margin="77,133,0,0" VerticalAlignment="Top" Height="50" Width="149" Click="Button_Click" Background="LightGray" BorderBrush="Gray"/>
+
+    </Grid>
+</Window>
